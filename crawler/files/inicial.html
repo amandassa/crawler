@@ -1,0 +1,2180 @@
+<html><head>
+<title>Sistema de Transporte Intermunicipal de Passageiros - Agerba</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script language="javascript">
+
+<!-- Original:  Cyanide_7 (leo7278@hotmail.com) -->
+<!-- Web Site:  http://members.xoom.com/cyanide_7 -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var isNN = (navigator.appName.indexOf("Netscape")!=-1);
+function autoTab(input,len, e) {
+var keyCode = (isNN) ? e.which : e.keyCode; 
+var filter = (isNN) ? [0,8,9] : [0,8,9,16,17,18,37,38,39,40,46];
+if(input.value.length >= len && !containsElement(filter,keyCode)) {
+input.value = input.value.slice(0, len);
+input.form[(getIndex(input)+1) % input.form.length].focus();
+}
+function containsElement(arr, ele) {
+var found = false, index = 0;
+while(!found && index < arr.length)
+if(arr[index] == ele)
+found = true;
+else
+index++;
+return found;
+}
+function getIndex(input) {
+var index = -1, i = 0, found = false;
+while (i < input.form.length && index == -1)
+if (input.form[i] == input)index = i;
+else i++;
+return index;
+}
+return true;
+}
+//  End -->
+
+function putFocus(formInst, elementInst) 
+{
+//  if (document.form1.length > 0) 
+//  {
+  		//document.form1.login.focus();
+//  }
+}
+
+//function critica(form1)
+//{
+//	if (form1.login.value == "")
+ //   {
+//		 window.alert("Informe o seu login!");
+//		 document.form1.login.focus();
+//	     return false;
+ //   } 
+ // 	if (form1.senha.value == "")
+ //   {
+//	     window.alert("Informe a sua senha!");
+  //       document.form1.senha.focus();
+	//     return false;
+//    } 
+//}
+</script>
+
+
+</head>
+
+
+<body onload="putFocus(0,0);" vlink="#0033FF" text="#000000" link="#0033FF" alink="#0033FF">
+<table width="100%" height="100%" border="0" align="center"></table>
+  
+    <p align="center">
+	  </p><p align="center"> <font font="" size="1" face="Arial,sans-serif" color="#0033FF"> <b> </b></font></p><p><font font="" size="1" face="Arial,sans-serif" color="#0033FF"><b>
+    <table bordercolordark="#D4EAFF" width="89%" cellspacing="0" cellpadding="0" border="1" align="center">
+      <tbody><tr bgcolor="#33CCCC"> 
+        <td colspan="2" bgcolor="#D4EAFF"> 
+          <h4 align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">LOCALIDADES ATENDIDAS POR LINHAS 
+            </font></h4>
+          </td>
+  		</tr>
+	</tbody></table></b></font></p><p><font font="" size="1" face="Arial,sans-serif" color="#0033FF"><b>
+	
+	<table bordercolordark="#D4EAFF" width="89%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr bgcolor="#33CCCC"> 
+        <td colspan="2" bgcolor="#FFFFFF"> <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">Esta
+ 
+          consulta permite listar quais as localidades atendidas por 
+determinada linha no transporte rodoviário intermunicipal de 
+passageiros.<br></font><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+          </font></p></td>
+      </tr>
+    </tbody></table>
+	<table bordercolordark="#D4EAFF" width="89%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr bgcolor="#33CCCC"> 
+        <td colspan="2" bgcolor="#FFFFFF"> <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+          Para consultar as localidades, informe a linha desejada:<br>
+          </font></td>
+         
+      </tr>
+    
+    </tbody></table>
+      
+      
+    </b></font></p><form method="post" action="pesq_localidade_linha.asp" name="frm"><font font="" size="1" face="Arial,sans-serif" color="#0033FF"><b>
+  <blockquote> 
+          
+    <table width="49%" cellspacing="2" cellpadding="2" border="0">
+                         
+                      
+            <tbody><tr><td colspan="2" width="73%"> <b><font size="2" face="Arial, Helvetica, sans-serif"> 
+              <select name="sel_linha" size="1">
+                
+                <option value="002" selected="selected">002 - ITAMARAJU - NOVA VIÇOSA</option>
+                
+                <option value="003">003 - VALENÇA - UBATÃ VIA CAMAMU</option>
+                
+                <option value="003X">003X - BOM DESPACHO - UBATÃ VIA VALENÇA/BA-001</option>
+                
+                <option value="005">005 - ITABUNA - FEIRA DE SANTANA VIA CONCEIÇÃO DE FEIRA</option>
+                
+                <option value="006">006 - JEQUIÉ - UBAITABA VIA ORICÓ</option>
+                
+                <option value="007">007 - JUAZEIRO - CAMPO ALEGRE DE LOURDES VIA BR235</option>
+                
+                <option value="008">008 - SALVADOR - GANDU</option>
+                
+                <option value="009">009 - SALVADOR - CAIRU VIA VALENÇA</option>
+                
+                <option value="010">010 - ITABUNA - BOM JESUS DA LAPA</option>
+                
+                <option value="010.EXE">010.EXE - ITABUNA - BOM JESUS DA LAPA</option>
+                
+                <option value="010A">010A - ITABUNA - IBOTIRAMA VIA SÍTIO DO MATO</option>
+                
+                <option value="012">012 - SALVADOR - ITANHÉM VIA BR101</option>
+                
+                <option value="012.DCO">012.DCO - SALVADOR - ITANHÉM VIA BR101</option>
+                
+                <option value="012.ESL">012.ESL - SALVADOR - ITANHÉM VIA BR101</option>
+                
+                <option value="012R">012R - MEDEIROS NETO - ITANHÉM</option>
+                
+                <option value="015">015 - JEQUIÉ - ITAGI VIA BEIRA RIO</option>
+                
+                <option value="016">016 - SALVADOR - AMARGOSA VIA SANTO AMARO</option>
+                
+                <option value="018">018 - SALVADOR - AMARGOSA VIA BR 101</option>
+                
+                <option value="018.CAR">018.CAR - SALVADOR - AMARGOSA VIA BR 101</option>
+                
+                <option value="018.EXE">018.EXE - SALVADOR - AMARGOSA VIA BR 101</option>
+                
+                <option value="019">019 - SALVADOR - CRUZ DAS ALMAS VIA BR 101</option>
+                
+                <option value="019.EXE">019.EXE - SALVADOR x CRUZ DAS ALMAS via BR101</option>
+                
+                <option value="019A">019A - SALVADOR - CONCEIÇÃO DO ALMEIDA VIA CRUZ DAS ALMAS</option>
+                
+                <option value="019E">019E - SALVADOR - HUMILDES VIA BR-101</option>
+                
+                <option value="021">021 - BOM DESPACHO - CONCEIÇÃO DE SALINAS</option>
+                
+                <option value="022">022 - BRUMADO - LICÍNIO DE ALMEIDA VIA IBIASSUCÊ</option>
+                
+                <option value="023">023 - VITÓRIA DA CONQUISTA - LIVRAMENTO DE NOSSA SENHORA VIA DOM BASÍLIO</option>
+                
+                <option value="023A">023A - VITÓRIA DA CONQUISTA - PARAMIRIM</option>
+                
+                <option value="023A2">023A2 - VITÓRIA DA CONQUISTA - RIO DE CONTAS VIA LIVRAMENTO DE NOSSA SENHORA</option>
+                
+                <option value="024">024 - VITÓRIA DA CONQUISTA - CAETITÉ</option>
+                
+                <option value="024A">024A - VITÓRIA DA CONQUISTA - GUANAMBI VIA PAJEÚ DO VENTO</option>
+                
+                <option value="025">025 - JACOBINA - ITABERABA VIA PIRITIBA</option>
+                
+                <option value="026">026 - BOM DESPACHO - JAGUARIPE</option>
+                
+                <option value="030">030 - SANTO AMARO - MADRE DE DEUS VIA SÃO FRANCISCO DO CONDE</option>
+                
+                <option value="033">033 - JEQUIÉ - CATINGAL</option>
+                
+                <option value="034">034 - JEQUIÉ - UBAÍRA</option>
+                
+                <option value="035">035 - JEQUIÉ - ITAIBÓ</option>
+                
+                <option value="035A">035A - JEQUIÉ - APUAREMA VIA ITAIBÓ</option>
+                
+                <option value="037">037 - JEQUIÉ - JAGUAQUARA</option>
+                
+                <option value="037.MIC">037.MIC - JEQUIÉ - JAGUAQUARA</option>
+                
+                <option value="037A">037A - JEQUIÉ - ITAQUARA VIA JAGUAQUARA</option>
+                
+                <option value="038">038 - ITABERABA - IPIRÁ</option>
+                
+                <option value="039">039 - ITABERABA - BARRA DO MENDES</option>
+                
+                <option value="039A">039A - ITABERABA - IRECÊ</option>
+                
+                <option value="039A2">039A2 - BARRA DO MENDES - PARAGUAÇU VIA ITABERABA</option>
+                
+                <option value="039A2E">039A2E - CANARANA - PARAGUAÇU VIA ITABERABA</option>
+                
+                <option value="039R">039R - IRECÊ - BARRA DO MENDES</option>
+                
+                <option value="040">040 - SALVADOR - ITAETÊ</option>
+                
+                <option value="040A">040A - SALVADOR - RUMO VIA ITAETÊ</option>
+                
+                <option value="044">044 - VITÓRIA DA CONQUISTA - BONINAL</option>
+                
+                <option value="044A">044A - VITÓRIA DA CONQUISTA - SEABRA</option>
+                
+                <option value="045">045 - SALVADOR - EUCLIDES DA CUNHA</option>
+                
+                <option value="046">046 - SALVADOR - TUCANO</option>
+                
+                <option value="047">047 - SALVADOR - FEIRA DE SANTANA</option>
+                
+                <option value="049">049 - BOM DESPACHO - ENGENHEIRO PONTES</option>
+                
+                <option value="051">051 - VITÓRIA DA CONQUISTA - BOM JESUS DA SERRA</option>
+                
+                <option value="052">052 - VITÓRIA DA CONQUISTA - BELO CAMPO</option>
+                
+                <option value="053">053 - ITABUNA - VITÓRIA DA CONQUISTA VIA IGUAÍ</option>
+                
+                <option value="053.EXE">053.EXE - ITABUNA - VITÓRIA DA CONQUISTA VIA IGUAÍ</option>
+                
+                <option value="053R2.MIC">053R2.MIC - VITÓRIA DA CONQUISTA - POÇÕES</option>
+                
+                <option value="054">054 - SALVADOR - UBATÃ</option>
+                
+                <option value="054.ESL">054.ESL - SALVADOR X UBATÃ</option>
+                
+                <option value="054.EXE">054.EXE - SALVADOR - UBATÃ</option>
+                
+                <option value="054.EXP">054.EXP - SALVADOR - UBATÃ</option>
+                
+                <option value="054.LEI">054.LEI - SALVADOR X UBATÃ</option>
+                
+                <option value="055">055 - SALVADOR - JEQUIÉ</option>
+                
+                <option value="055.CAR">055.CAR - SALVADOR - JEQUIÉ</option>
+                
+                <option value="055.ESL">055.ESL - SALVADOR - JEQUIÉ</option>
+                
+                <option value="055.EXP">055.EXP - SALVADOR - JEQUIÉ</option>
+                
+                <option value="055.LEI">055.LEI - SALVADOR - JEQUIÉ</option>
+                
+                <option value="055A">055A - SALVADOR - BOA NOVA VIA JEQUIÉ</option>
+                
+                <option value="056">056 - SALVADOR - IPIAÚ</option>
+                
+                <option value="058">058 - SALVADOR - CATU VIA POJUCA</option>
+                
+                <option value="058E">058E - SALVADOR - POJUCA</option>
+                
+                <option value="059">059 - SALVADOR - CATU VIA BA093</option>
+                
+                <option value="060">060 - SALVADOR - JAGUAQUARA VIA BR 101</option>
+                
+                <option value="060A">060A - SALVADOR - MARACÁS VIA JAGUAQUARA</option>
+                
+                <option value="060A2">060A2 - SALVADOR - JEQUIÉ VIA JAGUAQUARA</option>
+                
+                <option value="060AR.URB">060AR.URB - JAGUAQUARA - MARACÁS</option>
+                
+                <option value="061">061 - SALVADOR - ALAGOINHAS VIA CATU</option>
+                
+                <option value="061.EXE">061.EXE - SALVADOR - ALAGOINHAS VIA CATU</option>
+                
+                <option value="062">062 - SALVADOR - ALAGOINHAS VIA POJUCA</option>
+                
+                <option value="063">063 - SALVADOR - ALAGOINHAS</option>
+                
+                <option value="066">066 - SALVADOR - ARAMARI</option>
+                
+                <option value="067">067 - SALVADOR - INHAMBUPE</option>
+                
+                <option value="068">068 - SALVADOR - SÁTIRO DIAS</option>
+                
+                <option value="069">069 - SALVADOR - CATU VIA SÃO SEBASTIÃO DO PASSÉ</option>
+                
+                <option value="070">070 - SALVADOR - PEDRÃO</option>
+                
+                <option value="071">071 - ALAGOINHAS - FEIRA DE SANTANA VIA BR101</option>
+                
+                <option value="072">072 - SALVADOR - MIGUEL CALMON VIA CAPIM GROSSO</option>
+                
+                <option value="072.ESL">072.ESL - SALVADOR - MIGUEL CALMON VIA CAPIM GROSSO</option>
+                
+                <option value="073">073 - SALVADOR - JUAZEIRO VIA CAPIM GROSSO</option>
+                
+                <option value="073.ESL">073.ESL - SALVADOR - JUAZEIRO VIA CAPIM GROSSO</option>
+                
+                <option value="073.LEX">073.LEX - SALVADOR - JUAZEIRO VIA CAPIM GROSSO</option>
+                
+                <option value="073R">073R - SENHOR DO BONFIM - PONTO NOVO</option>
+                
+                <option value="074">074 - SALVADOR - JACOBINA</option>
+                
+                <option value="074.EXE">074.EXE - SALVADOR - JACOBINA</option>
+                
+                <option value="074A2">074A2 - SALVADOR - VÁRZEA NOVA VIA JACOBINA</option>
+                
+                <option value="074R">074R - JACOBINA - UMBURANAS VIA OUROLÂNDIA</option>
+                
+                <option value="075">075 - SALVADOR - CAMPO FORMOSO</option>
+                
+                <option value="075.ESL">075.ESL - SALVADOR - CAMPO FORMOSO</option>
+                
+                <option value="076">076 - SALVADOR - SENHOR DO BONFIM</option>
+                
+                <option value="076AR">076AR - SENHOR DO BOMFIM - ANDORINHA</option>
+                
+                <option value="078">078 - FEIRA DE SANTANA - JUAZEIRO</option>
+                
+                <option value="079">079 - ITABUNA - LAGOA REDONDA VIA BR 101</option>
+                
+                <option value="080I">080I - ITABUNA - LAGOA REDONDA VIA BR116 / BR101</option>
+                
+                <option value="081">081 - CAMACAN - UNA VIA ARATACA</option>
+                
+                <option value="082">082 - SALVADOR - MAIRI</option>
+                
+                <option value="082.CAR">082.CAR - SALVADOR - MAIRI</option>
+                
+                <option value="082A">082A - SALVADOR - SERROLÂNDIA VIA MAIRI</option>
+                
+                <option value="082A.CAR">082A.CAR - SALVADOR - SERROLÂNDIA VIA MAIRI</option>
+                
+                <option value="082A.EXE">082A.EXE - SALVADOR - SERROLÂNDIA VIA MAIRI</option>
+                
+                <option value="082E">082E - SALVADOR - IPIRÁ</option>
+                
+                <option value="082E.CAR">082E.CAR - SALVADOR - IPIRÁ</option>
+                
+                <option value="082E.EXE">082E.EXE - SALVADOR - IPIRÁ</option>
+                
+                <option value="083">083 - FEIRA DE SANTANA - MAIRI VIA CAPIM GROSSO</option>
+                
+                <option value="085">085 - SALVADOR - FEIRA DE SANTANA</option>
+                
+                <option value="085.EXE">085.EXE - SALVADOR - FEIRA DE SANTANA</option>
+                
+                <option value="086">086 - FEIRA DE SANTANA - CANDEIAS</option>
+                
+                <option value="086A">086A - FEIRA DE SANTANA - MADRE DE DEUS VIA CANDEIAS</option>
+                
+                <option value="087">087 - SALVADOR - RUY BARBOSA VIA IPIRÁ / BA488 / BA046</option>
+                
+                <option value="087.EXE">087.EXE - SALVADOR - RUY BARBOSA VIA IPIRÁ / BA488 / BA046</option>
+                
+                <option value="087E">087E - SALVADOR - ITABERABA VIA IPIRÁ / BA488</option>
+                
+                <option value="087E.CAR">087E.CAR - SALVADOR - ITABERABA VIA IPIRÁ / BA488</option>
+                
+                <option value="087E.EXE">087E.EXE - SALVADOR - ITABERABA VIA IPIRÁ / BA488</option>
+                
+                <option value="092">092 - VITÓRIA DA CONQUISTA - TREMEDAL VIA BELO CAMPO</option>
+                
+                <option value="093">093 - SALVADOR - BOM JESUS DA LAPA VIA MARACÁS</option>
+                
+                <option value="093A">093A - SALVADOR - CORRENTINA VIA MARACÁS</option>
+                
+                <option value="094">094 - SALVADOR - GUANAMBI</option>
+                
+                <option value="094.EXE">094.EXE - SALVADOR - GUANAMBI</option>
+                
+                <option value="094.LEI">094.LEI - SALVADOR - GUANAMBI</option>
+                
+                <option value="094A">094A - SALVADOR - URANDI VIA GUANAMBI</option>
+                
+                <option value="094A2">094A2 - SALVADOR - CANDIBA VIA GUANAMBI</option>
+                
+                <option value="094A3">094A3 - SALVADOR - SEBASTIÃO LARANJEIRAS VIA GUANAMBI</option>
+                
+                <option value="095">095 - FEIRA DE SANTANA - BOM JESUS DOS POBRES via BR324</option>
+                
+                <option value="096">096 - SALVADOR - MARACÁS VIA PLANALTINO</option>
+                
+                <option value="097.URB">097.URB - SANTO AMARO - SANTIAGO DO IGUAPE via BR420 e BA880</option>
+                
+                <option value="098E">098E - VITÓRIA DA CONQUISTA - PRESIDENTE JÂNIO QUADROS</option>
+                
+                <option value="098I">098I - VITÓRIA DA CONQUISTA - MORTUGABA VIA MAETINGA</option>
+                
+                <option value="099">099 - VITÓRIA DA CONQUISTA - BOM JESUS DA LAPA</option>
+                
+                <option value="099A">099A - VITÓRIA DA CONQUISTA - SANTA MARIA DA VITÓRIA</option>
+                
+                <option value="099R">099R - VITÓRIA DA CONQUISTA - ANAGÉ</option>
+                
+                <option value="100">100 - VITÓRIA DA CONQUISTA - GUANAMBI</option>
+                
+                <option value="1000">1000 - SÃO JOAQUIM - BOM DESPACHO</option>
+                
+                <option value="1001">1001 - SALVADOR (TTNB) - VERA CRUZ (PRAIA DO DURO)</option>
+                
+                <option value="1002">1002 - SALVADOR (TTNB) - VERA CRUZ (PRAIA DO DURO)</option>
+                
+                <option value="101">101 - SALVADOR - VITÓRIA DA CONQUISTA VIA BR 116</option>
+                
+                <option value="101.CAR">101.CAR - SALVADOR - VITÓRIA DA CONQUISTA VIA BR 116</option>
+                
+                <option value="101.ESL">101.ESL - SALVADOR - VITÓRIA DA CONQUISTA VIA BR 116</option>
+                
+                <option value="101.EXP">101.EXP - SALVADOR - VITÓRIA DA CONQUISTA VIA BR 116</option>
+                
+                <option value="101.LEX">101.LEX - SALVADOR - VITÓRIA DA CONQUISTA VIA BR 116</option>
+                
+                <option value="1010">1010 - SALVADOR (TTNB) - MORRO DE SÃO PAULO (CAIRÚ)</option>
+                
+                <option value="1011">1011 - SALVADOR (TTNB) - MORRO DE SÃO PAULO (CAIRÚ)</option>
+                
+                <option value="1012">1012 - SALVADOR (TTNB) - MORRO DE SÃO PAULO (CAIRÚ)</option>
+                
+                <option value="1016.LC">1016.LC - VALENÇA (BOM JARDIM) - CAIRU (MORRO DE SÃO PAULO) VIA GAMBOA DO MORRO</option>
+                
+                <option value="1016.LR">1016.LR - VALENÇA (BOM JARDIM) - CAIRU (MORRO DE SÃO PAULO) VIA GAMBOA DO MORRO</option>
+                
+                <option value="101A">101A - SALVADOR - CONDEÚBA VIA VITÓRIA DA CONQUISTA</option>
+                
+                <option value="102">102 - SALVADOR - FEIRA DE SANTANA</option>
+                
+                <option value="1020.LC">1020.LC - TAPEROÁ (GRACIOSA) - CAIRU (SEDE)</option>
+                
+                <option value="1020.LR">1020.LR - TAPEROÁ (GRACIOSA) - CAIRU (SEDE)</option>
+                
+                <option value="103">103 - SALVADOR - POSTO DA MATA</option>
+                
+                <option value="103A">103A - SALVADOR - NOVA VIÇOSA VIA POSTO DA MATA / MUCURI</option>
+                
+                <option value="104">104 - SALVADOR - CÂNDIDO SALES</option>
+                
+                <option value="104R">104R - VITÓRIA DA CONQUISTA - CÂNDIDO SALES</option>
+                
+                <option value="105">105 - VALENÇA - CAMAMU</option>
+                
+                <option value="106">106 - VALENÇA - GANDU VIA BR101</option>
+                
+                <option value="107">107 - JEQUIÉ - VALENÇA VIA BR101</option>
+                
+                <option value="107X">107X - VITÓRIA DA CONQUISTA - VALENÇA VIA JEQUIÉ</option>
+                
+                <option value="108">108 - JEQUIÉ - ITABUNA VIA BR101</option>
+                
+                <option value="108.EXE">108.EXE - JEQUIÉ - ITABUNA VIA BR101</option>
+                
+                <option value="108A">108A - JEQUIÉ - ILHÉUS VIA ITABUNA / BR101</option>
+                
+                <option value="108A.EXE">108A.EXE - JEQUIÉ - ILHÉUS VIA ITABUNA/ BR101</option>
+                
+                <option value="108X">108X - JEQUIÉ - CANAVIEIRAS</option>
+                
+                <option value="108X.EXE">108X.EXE - JEQUIÉ - CANAVIEIRAS</option>
+                
+                <option value="109">109 - JEQUIÉ - VITÓRIA DA CONQUISTA</option>
+                
+                <option value="109.EXE">109.EXE - JEQUIÉ - VITÓRIA DA CONQUISTA</option>
+                
+                <option value="110">110 - VITÓRIA DA CONQUISTA - IPIAÚ</option>
+                
+                <option value="112">112 - JEQUIÉ - UBATÃ VIA BARRA DO ROCHA</option>
+                
+                <option value="112X">112X - JEQUIÉ - ITACARÉ VIA TABOQUINHA</option>
+                
+                <option value="112X2">112X2 - JEQUIÉ - CAMPINHO</option>
+                
+                <option value="113">113 - JEQUIÉ - AIQUARA</option>
+                
+                <option value="114I">114I - JEQUIÉ - GANDU VIA FLORESTAL</option>
+                
+                <option value="114IR.MIC">114IR.MIC - JEQUIÉ - APUAREMA</option>
+                
+                <option value="115">115 - SALVADOR - UBAITABA VIA BR101</option>
+                
+                <option value="115A">115A - SALVADOR - IPIAÚ VIA BR101</option>
+                
+                <option value="115A.CAR">115A.CAR - SALVADOR - IPIAÚ VIA BR101</option>
+                
+                <option value="117">117 - JEQUIÉ - ITAGI VIA JITAÚNA</option>
+                
+                <option value="118">118 - JEQUIÉ - IBITUPÃ</option>
+                
+                <option value="120">120 - JEQUIÉ - DÁRIO MEIRA VIA BOA NOVA</option>
+                
+                <option value="122.URB">122.URB - SANTO AMARO - BOM JESUS DOS POBRES</option>
+                
+                <option value="123">123 - SALVADOR - IBIRAPITANGA VIA BR101</option>
+                
+                <option value="124I">124I - ITABUNA - MARAÚ VIA BA-001</option>
+                
+                <option value="125">125 - LIVRAMENTO  DE NOSSA SENHORA - CAETITÉ VIA LAGOA REAL</option>
+                
+                <option value="126">126 - ITABUNA - IBIRAPITANGA VIA UBAITABA</option>
+                
+                <option value="127.URB">127.URB - ITABUNA - ITAJUÍPE</option>
+                
+                <option value="128">128 - ITABUNA - UBATÃ VIA ITAJUÍPE</option>
+                
+                <option value="129">129 - SALVADOR - PIRITIBA</option>
+                
+                <option value="129.CAR">129.CAR - SALVADOR - PIRITIBA</option>
+                
+                <option value="129.EXE">129.EXE - SALVADOR - PIRITIBA</option>
+                
+                <option value="130">130 - SALVADOR - SANTO ESTEVÃO</option>
+                
+                <option value="130.CAR">130.CAR - SALVADOR - SANTO ESTEVÃO</option>
+                
+                <option value="133">133 - FEIRA DE SANTANA - IPIRÁ</option>
+                
+                <option value="134E">134E - ITABUNA - ARATACA</option>
+                
+                <option value="135">135 - ITABUNA - POÇÕES</option>
+                
+                <option value="135.EXE">135.EXE - ITABUNA - POÇÕES</option>
+                
+                <option value="136.URB">136.URB - ITABUNA - BUERAREMA</option>
+                
+                <option value="137">137 - ITABUNA - SÃO JOSÉ DA VITÓRIA</option>
+                
+                <option value="138">138 - SALVADOR - PRAIA DO FORTE</option>
+                
+                <option value="138.URB">138.URB - TERMINAL AEROPORTO - PRAIA DO FORTE</option>
+                
+                <option value="139">139 - ITABUNA - BARRO PRETO</option>
+                
+                <option value="140">140 - SALVADOR - CONCEIÇÃO DA FEIRA VIA BR. 101</option>
+                
+                <option value="142">142 - SALVADOR - SANTO ANTÔNIO DE JESUS VIA SANTO AMARO</option>
+                
+                <option value="144">144 - SALVADOR - AMARGOSA VIA SANTO AMARO</option>
+                
+                <option value="145">145 - SALVADOR - SEABRA</option>
+                
+                <option value="145.EXE">145.EXE - SALVADOR - SEABRA</option>
+                
+                <option value="145.LEX">145.LEX - SALVADOR - SEABRA</option>
+                
+                <option value="145A">145A - SALVADOR - IBITIARA VIA SEABRA</option>
+                
+                <option value="145E">145E - SALVADOR - LENÇÓIS</option>
+                
+                <option value="146">146 - SALVADOR - IBOTIRAMA</option>
+                
+                <option value="146A">146A - SALVADOR - BOM JESUS DA LAPA VIA IBOTIRAMA / SÍTIO DO MATO</option>
+                
+                <option value="146A.EXE">146A.EXE - SALVADOR - BOM JESUS DA LAPA VIA IBOTIRAMA/ SÍTIO DO MATO</option>
+                
+                <option value="146A.LEX">146A.LEX - SALVADOR - BOM JESUS DA LAPA VIA IBOTIRAMA/ SÍTIO DO MATO</option>
+                
+                <option value="147">147 - SALVADOR - BARREIRAS</option>
+                
+                <option value="147.EXE">147.EXE - SALVADOR - BARREIRAS</option>
+                
+                <option value="147A">147A - SALVADOR - LUIS EDUARDO MAGALHÃES VIA BARREIRAS</option>
+                
+                <option value="147A.EXE">147A.EXE - SALVADOR - LUIS EDUARDO MAGALHÃES VIA BARREIRAS</option>
+                
+                <option value="147A.LEX">147A.LEX - SALVADOR - LUÍS EDUARDO MAGALHÃES</option>
+                
+                <option value="147A2">147A2 - SALVADOR - FORMOSA DO RIO PRETO VIA BARREIRAS</option>
+                
+                <option value="147A3">147A3 - SALVADOR - SANTA RITA DE CÁSSIA VIA BARREIRAS</option>
+                
+                <option value="147A4">147A4 - SALVADOR - MANSIDÃO VIA BARREIRAS</option>
+                
+                <option value="148">148 - VITÓRIA DA CONQUISTA - BARRA DA ESTIVA</option>
+                
+                <option value="149">149 - BRUMADO - IBIAJARA</option>
+                
+                <option value="150">150 - SALVADOR - VALENÇA VIA SANTO AMARO</option>
+                
+                <option value="151">151 - SALVADOR - CAMAMU VIA SANTO AMARO</option>
+                
+                <option value="152">152 - SALVADOR - SÃO FÉLIX VIA SANTO AMARO</option>
+                
+                <option value="152.EXE">152.EXE - SALVADOR - SÃO FÉLIX VIA SANTO AMARO</option>
+                
+                <option value="153">153 - SALVADOR - SAUBARA VIA ACUPE</option>
+                
+                <option value="153E">153E - SALVADOR - ACUPE</option>
+                
+                <option value="154">154 - SALVADOR - OLIVEIRA DOS CAMPINHOS</option>
+                
+                <option value="155">155 - SANTO AMARO - SÃO FRANCISCO DO CONDE</option>
+                
+                <option value="156">156 - FEIRA DE SANTANA - SANTO AMARO via BR 324</option>
+                
+                <option value="157">157 - FEIRA DE SANTANA - SÃO FRANCISCO DO CONDE</option>
+                
+                <option value="158">158 - SALVADOR - SANTO AMARO</option>
+                
+                <option value="158.EXE">158.EXE - SALVADOR - SANTO AMARO</option>
+                
+                <option value="158A">158A - SALVADOR - BOM JESUS DOS POBRES VIA SANTO AMARO</option>
+                
+                <option value="158A.EXE">158A.EXE - SALVADOR - BOM JESUS DOS POBRES VIA SANTO AMARO</option>
+                
+                <option value="158A2">158A2 - SALVADOR - PEDRA VIA SANTO AMARO</option>
+                
+                <option value="159">159 - SALVADOR - TEODORO SAMPAIO</option>
+                
+                <option value="160">160 - BOM JESUS DA LAPA - CARINHANHA</option>
+                
+                <option value="161">161 - SALVADOR - CONCEIÇÃO DO JACUÍPE</option>
+                
+                <option value="162">162 - SALVADOR - LUSTOSA</option>
+                
+                <option value="164">164 - SANTO AMARO - CANDEIAS</option>
+                
+                <option value="165">165 - SALVADOR - CASTRO ALVES  VIA BR 101</option>
+                
+                <option value="165.CAR">165.CAR - SALVADOR - CASTRO ALVES VIA BR101</option>
+                
+                <option value="165A">165A - SALVADOR - RAFAEL JAMBEIRO VIA BR 101</option>
+                
+                <option value="165A2">165A2 - SALVADOR - ELÍSIO MEDRADO VIA CASTRO ALVES / BR-101</option>
+                
+                <option value="165A3">165A3 - SALVADOR - SANTA TERESINHA VIA CASTRO ALVES/BR101</option>
+                
+                <option value="168">168 - SALVADOR - CONCEIÇÃO DO ALMEIDA VIA BR 101</option>
+                
+                <option value="169">169 - SALVADOR - SÃO FELIPE VIA BR 101</option>
+                
+                <option value="169.EXE">169.EXE - SALVADOR - SÃO FELIPE VIA BR 101</option>
+                
+                <option value="170">170 - SALVADOR - SAPEAÇU VIA BR 101</option>
+                
+                <option value="170A">170A - SALVADOR - D. MACEDO COSTA VIA SAPEAÇU</option>
+                
+                <option value="172">172 - ILHÉUS - VITÓRIA DA CONQUISTA VIA ITAPETINGA</option>
+                
+                <option value="172.EXE">172.EXE - ILHÉUS - VITÓRIA DA CONQUISTA VIA ITAPETINGA</option>
+                
+                <option value="172A">172A - ITACARÉ - VITÓRIA DA CONQUISTA VIA ITAPETINGA</option>
+                
+                <option value="172A.EXE">172A.EXE - ITACARÉ - VITÓRIA DA CONQUISTA VIA ITAPETINGA</option>
+                
+                <option value="173">173 - ILHÉUS - URUÇUCA</option>
+                
+                <option value="174">174 - ITABUNA - ITAPETINGA</option>
+                
+                <option value="175">175 - ITABUNA - IBICARAÍ</option>
+                
+                <option value="176">176 - ITABUNA - FLORESTA AZUL</option>
+                
+                <option value="177.URB">177.URB - ITABUNA - ITAPÉ</option>
+                
+                <option value="178">178 - ITABUNA - ALMADINA VIA COARACI</option>
+                
+                <option value="179.URB">179.URB - ITABUNA - BARRO PRETO</option>
+                
+                <option value="180">180 - ITABUNA - COARACI</option>
+                
+                <option value="181">181 - ITABUNA - ITAPITANGA VIA COARACI</option>
+                
+                <option value="182">182 - VITÓRIA DA CONQUISTA - ITAPETINGA</option>
+                
+                <option value="183">183 - GUANAMBI - PINDORAMA</option>
+                
+                <option value="183A">183A - GUANAMBI - CANABRAVA VIA PINDORAMA</option>
+                
+                <option value="184">184 - ITABUNA - VITÓRIA DA CONQUISTA VIA ITAPETINGA</option>
+                
+                <option value="186">186 - EUNÁPOLIS - CARAVELAS VIA PRADO</option>
+                
+                <option value="186A">186A - CARAVELAS - PORTO SEGURO VIA EUNÁPOLIS</option>
+                
+                <option value="187">187 - ILHÉUS - GUANAMBI</option>
+                
+                <option value="187A">187A - CANAVIEIRAS - GUANAMBI VIA ILHÉUS</option>
+                
+                <option value="187R">187R - BRUMADO - CAETITÉ</option>
+                
+                <option value="187R2">187R2 - BRUMADO - GUANAMBI</option>
+                
+                <option value="188">188 - IPUPIARA - MACAÚBAS</option>
+                
+                <option value="188A">188A - IPUPIARA - IBIPITANGA</option>
+                
+                <option value="189">189 - SALVADOR - FLORESTA AZUL VIA ITABUNA</option>
+                
+                <option value="190">190 - ITABUNA - MASCOTE</option>
+                
+                <option value="191">191 - ITABUNA - CAMACAN</option>
+                
+                <option value="192">192 - SALVADOR - ITABUNA VIA BR101</option>
+                
+                <option value="192.CAR">192.CAR - SALVADOR - ITABUNA VIA BR 101</option>
+                
+                <option value="192.DCO">192.DCO - SALVADOR - ITABUNA VIA BR101</option>
+                
+                <option value="192.ESL">192.ESL - SALVADOR - ITABUNA VIA BR101</option>
+                
+                <option value="192.EXE">192.EXE - SALVADOR - ITABUNA VIA BR101</option>
+                
+                <option value="192A">192A - SALVADOR - ILHÉUS VIA ITABUNA</option>
+                
+                <option value="192A.DCO">192A.DCO - SALVADOR - ILHÉUS VIA ITABUNA</option>
+                
+                <option value="192A.ESL">192A.ESL - SALVADOR - ILHÉUS VIA ITABUNA</option>
+                
+                <option value="192A2">192A2 - SALVADOR - ITACARÉ VIA SERRA GRANDE</option>
+                
+                <option value="192A2.EXE">192A2.EXE - SALVADOR - ITACARÉ VIA SERRA GRANDE</option>
+                
+                <option value="193A">193A - SALVADOR - LICÍNIO DE ALMEIDA VIA CACULÉ e MARACÁS</option>
+                
+                <option value="193I">193I - SALVADOR - CACULÉ VIA PLANALTINO / NOVA ITARANA</option>
+                
+                <option value="193R">193R - BRUMADO - IBIASSUCÊ</option>
+                
+                <option value="193R2">193R2 - BRUMADO - CACULÉ</option>
+                
+                <option value="194">194 - SALVADOR - ILHÉUS VIA BR101 / ITABUNA</option>
+                
+                <option value="194E">194E - SALVADOR - ITABUNA VIA BR101</option>
+                
+                <option value="195">195 - SALVADOR - RIO DE CONTAS</option>
+                
+                <option value="195A">195A - SALVADOR - BRUMADO VIA RIO DE CONTAS</option>
+                
+                <option value="195E">195E - SALVADOR - ABAÍRA</option>
+                
+                <option value="196">196 - ITABUNA - EUNÁPOLIS</option>
+                
+                <option value="197">197 - ITABUNA - PORTO SEGURO</option>
+                
+                <option value="197.EXE">197.EXE - ITABUNA - PORTO SEGURO</option>
+                
+                <option value="197A2">197A2 - ILHÉUS - PORTO SEGURO VIA ITABUNA</option>
+                
+                <option value="197A2.EXE">197A2.EXE - ILHÉUS - PORTO SEGURO VIA ITABUNA</option>
+                
+                <option value="197X.CAR">197X.CAR - ITACARÉ - PORTO SEGURO</option>
+                
+                <option value="197X2">197X2 - PORTO SEGURO - JEQUIÉ VIA ITABUNA</option>
+                
+                <option value="197X2.EXE">197X2.EXE - PORTO SEGURO - JEQUIÉ VIA ITABUNA</option>
+                
+                <option value="198">198 - ITABUNA - ITAMARAJU</option>
+                
+                <option value="199">199 - ITABUNA - PAU BRASIL</option>
+                
+                <option value="200">200 - ITABUNA - BELMONTE</option>
+                
+                <option value="201">201 - ITABUNA - CANAVIEIRAS VIA SANTA LUZIA</option>
+                
+                <option value="201R.MIC">201R.MIC - CAMACAN - CANAVIEIRAS VIA SANTA LUZIA</option>
+                
+                <option value="202">202 - SALVADOR - ITAPETINGA VIA SANTA CRUZ DA VITÓRIA/ IGUAÍ</option>
+                
+                <option value="203">203 - ITABUNA - INEMA</option>
+                
+                <option value="204">204 - VITÓRIA DA CONQUISTA - CAPINADA</option>
+                
+                <option value="205">205 - ITABUNA - ITAJU DO COLÔNIA VIA ITAPÉ</option>
+                
+                <option value="205I">205I - ITABUNA - ITAJU DO COLÔNIA VIA FLORESTA AZUL</option>
+                
+                <option value="206">206 - VITÓRIA DA CONQUISTA - POÇÕES VIA CAETANOS</option>
+                
+                <option value="207">207 - ITABUNA - BRUMADO VIA ITAPETINGA</option>
+                
+                <option value="207A">207A - VARGITO - GUANAMBI VIA ITAPETINGA</option>
+                
+                <option value="207A2">207A2 - VARGITO - PARAMIRIM VIA CAMACAN/ ITAPETINGA</option>
+                
+                <option value="207F">207F - VARGITO - BRUMADO VIA CAMACAN/ ITAPETINGA</option>
+                
+                <option value="207R">207R - ITAMBÉ - BRUMADO</option>
+                
+                <option value="208">208 - VITÓRIA DA CONQUISTA - CALDEIRÃO</option>
+                
+                <option value="209">209 - ITAPETINGA - MACARANI</option>
+                
+                <option value="210">210 - SALVADOR - RIO DO PIRES VIA MACAÚBAS</option>
+                
+                <option value="210R">210R - SEABRA - IBIPITANGA</option>
+                
+                <option value="211">211 - VITÓRIA DA CONQUISTA - POV SÃO FELIPE (TREMEDAL)</option>
+                
+                <option value="212">212 - SALVADOR - ITAPETINGA VIA VITÓRIA DA CONQUISTA</option>
+                
+                <option value="212.EXE">212.EXE - SALVADOR - ITAPETINGA VIA VITÓRIA DA CONQUISTA</option>
+                
+                <option value="212R">212R - VITÓRIA DA CONQUISTA - POÇÕES</option>
+                
+                <option value="213">213 - VITÓRIA DA CONQUISTA - FAZ LAGOA DOS PEREIRA</option>
+                
+                <option value="214">214 - QUEIMADA NOVA - IBIPITANGA</option>
+                
+                <option value="215">215 - ITABUNA - SÃO JOÃO DO PARAÍSO</option>
+                
+                <option value="216">216 - FEIRA DE SANTANA - ITABUNA VIA BR101</option>
+                
+                <option value="216.CAR">216.CAR - FEIRA DE SANTANA - ITABUNA VIA BR101</option>
+                
+                <option value="216A">216A - FEIRA DE SANTANA - ILHÉUS VIA BR101</option>
+                
+                <option value="217">217 - ITABUNA - URUÇUCA VIA ITAJUÍPE</option>
+                
+                <option value="218">218 - ITABUNA - JUSSARI</option>
+                
+                <option value="218R">218R - BUERAREMA - SÃO JOSÉ DA VITÓRIA</option>
+                
+                <option value="219">219 - ITABUNA - PALMIRA VIA JUSSARI</option>
+                
+                <option value="220">220 - ITABUNA - UBAITABA</option>
+                
+                <option value="221">221 - SALVADOR - ILHÉUS VIA URUÇUCA</option>
+                
+                <option value="222.MIC">222.MIC - IBIRAPITANGA - UBAITABA</option>
+                
+                <option value="224">224 - FEIRA DE SANTANA - LAMARÃO</option>
+                
+                <option value="225">225 - SALVADOR - ARACI</option>
+                
+                <option value="225.MIC">225.MIC - SALVADOR - ARACI</option>
+                
+                <option value="225A">225A - SALVADOR - PEDRA ALTA VIA ARACI</option>
+                
+                <option value="225A2">225A2 - SALVADOR - SANTA LUZ VIA ARACI</option>
+                
+                <option value="225E">225E - SALVADOR - TEOFILÂNDIA</option>
+                
+                <option value="226">226 - FEIRA DE SANTANA - BIRITINGA</option>
+                
+                <option value="226A">226A - FEIRA DE SANTANA - PATAÍBA</option>
+                
+                <option value="226R">226R - SERRINHA - PATAIBA</option>
+                
+                <option value="227">227 - SALVADOR - CONCEIÇÃO DO COITÉ VIA SERRINHA</option>
+                
+                <option value="227.MIC">227.MIC - SALVADOR - CONCEIÇÃO DO COITÉ VIA SERRINHA</option>
+                
+                <option value="227A">227A - SALVADOR - SALGADÁLIA VIA SERRINHA</option>
+                
+                <option value="227A4">227A4 - SALVADOR - JUAZEIRINHO VIA SERRINHA</option>
+                
+                <option value="227A6">227A6 - SALVADOR - RETIROLÂNDIA VIA SERRINHA</option>
+                
+                <option value="227A8.MIC">227A8.MIC - SALVADOR - SÃO DOMINGOS VIA SERRINHA</option>
+                
+                <option value="228">228 - FEIRA DE SANTANA - CONCEIÇÃO DO COITÉ</option>
+                
+                <option value="230">230 - SALVADOR - CONCEIÇÃO DO COITÉ VIA RIACHÃO DO JACUÍPE</option>
+                
+                <option value="232">232 - FEIRA DE SANTANA - CAPELA DO ALTO ALEGRE</option>
+                
+                <option value="234">234 - FEIRA DE SANTANA - VALENTE</option>
+                
+                <option value="234A.MIC">234A.MIC - FEIRA DE SANTANA - SÃO DOMINGOS VIA VALENTE</option>
+                
+                <option value="235">235 - SALVADOR - SANTA LUZ</option>
+                
+                <option value="235A">235A - SALVADOR - ARACI VIA SANTA LUZ</option>
+                
+                <option value="235A2">235A2 - SALVADOR - ITATIAIA VIA SANTA LUZ</option>
+                
+                <option value="235E">235E - SALVADOR - VALENTE</option>
+                
+                <option value="236">236 - FEIRA DE SANTANA - SERRINHA</option>
+                
+                <option value="236.UMIC">236.UMIC - FEIRA DE SANTANA - SERRINHA</option>
+                
+                <option value="237">237 - SALVADOR - SERRINHA</option>
+                
+                <option value="237.MIC">237.MIC - SALVADOR - SERRINHA</option>
+                
+                <option value="237A">237A - SALVADOR - BARROCAS</option>
+                
+                <option value="237A.MIC">237A.MIC - SALVADOR - BARROCAS</option>
+                
+                <option value="238">238 - SALVADOR - RIACHÃO DO JACUÍPE</option>
+                
+                <option value="238A">238A - SALVADOR - PÉ DE SERRA VIA RIACHÃO DO JACUÍPE</option>
+                
+                <option value="238A.MIC">238A.MIC - SALVADOR - PÉ DE SERRA VIA RIACHÃO DO JACUÍPE</option>
+                
+                <option value="239.MIC">239.MIC - FEIRA DE SANTANA - ICHÚ</option>
+                
+                <option value="240">240 - ILHÉUS - ITACARÉ VIA SERRA GRANDE</option>
+                
+                <option value="240X">240X - ITABUNA - ITACARÉ VIA ILHÉUS</option>
+                
+                <option value="240X.EXE">240X.EXE - ITABUNA - ITACARÉ VIA ILHÉUS</option>
+                
+                <option value="241">241 - SALVADOR - CAMACAN VIA BR101</option>
+                
+                <option value="242">242 - SALVADOR - COARACI VIA BR101</option>
+                
+                <option value="243">243 - IRECÊ - SEABRA</option>
+                
+                <option value="243A">243A - SEABRA - JUSSARA VIA IRECÊ</option>
+                
+                <option value="244">244 - ILHÉUS - UBAITABA VIA URUÇUCA</option>
+                
+                <option value="245">245 - ITABUNA - VARGITO VIA CAMACAN</option>
+                
+                <option value="246">246 - ITABUNA - OLIVENÇA</option>
+                
+                <option value="246.EXE">246.EXE - ITABUNA - OLIVENÇA</option>
+                
+                <option value="247">247 - FEIRA DE SANTANA - SÃO FELIPE</option>
+                
+                <option value="248">248 - ITABUNA - ILHÉUS</option>
+                
+                <option value="248.URBAR">248.URBAR - ITABUNA - ILHÉUS</option>
+                
+                <option value="248R.URB">248R.URB - ITABUNA - SALOBRINHO</option>
+                
+                <option value="249">249 - JACOBINA - VÁRZEA DO POÇO</option>
+                
+                <option value="250">250 - VITÓRIA DA CONQUISTA - BONINAL VIA BRUMADO</option>
+                
+                <option value="250A">250A - VITÓRIA DA CONQUISTA - BARRA DO MENDES VIA BONINAL</option>
+                
+                <option value="250A2">250A2 - BONINAL - LAGOA PRETA VIA BELO CAMPO / BRUMADO</option>
+                
+                <option value="250R">250R - BRUMADO - RIO DE CONTAS</option>
+                
+                <option value="250R2">250R2 - BRUMADO - LIVRAMENTO DE N. SENHORA</option>
+                
+                <option value="252">252 - SALVADOR - LAGOA REDONDA</option>
+                
+                <option value="252.EXE">252.EXE - SALVADOR - LAGOA REDONDA</option>
+                
+                <option value="252E">252E - SALVADOR - OLINDINA</option>
+                
+                <option value="253.CAR">253.CAR - SALVADOR - PARIPIRANGA, VIA FEIRA DE SANTANA</option>
+                
+                <option value="254.CAR">254.CAR - SALVADOR - RIBEIRA DO POMBAL VIA CRISÓPOLIS</option>
+                
+                <option value="254A">254A - SALVADOR - BANZAÊ VIA RIBEIRA DO POMBAL</option>
+                
+                <option value="255">255 - SALVADOR - PARIPIRANGA VIA ALAGOINHAS</option>
+                
+                <option value="255.CAR">255.CAR - SALVADOR - PARIPIRANGA VIA ALAGOINHAS</option>
+                
+                <option value="256">256 - SALVADOR - PAULO AFONSO VIA ALAGOINHAS</option>
+                
+                <option value="256.CAR">256.CAR - SALVADOR - PAULO AFONSO VIA ALAGOINHAS</option>
+                
+                <option value="258">258 - SALVADOR - ANTAS</option>
+                
+                <option value="258A">258A - SALVADOR - JEREMOABO</option>
+                
+                <option value="258A2">258A2 - SALVADOR - NOVO TRIUNFO VIA ANTAS</option>
+                
+                <option value="258A2.CAR">258A2.CAR - SALVADOR - NOVO TRIUNFO VIA ANTAS</option>
+                
+                <option value="258A4">258A4 - SALVADOR - CORONEL JOÃO SÁ VIA ANTAS</option>
+                
+                <option value="258A4.CAR">258A4.CAR - SALVADOR - CORONEL JOÃO SÁ VIA ANTAS</option>
+                
+                <option value="259">259 - SALVADOR - ENTRE RIOS</option>
+                
+                <option value="259A">259A - SALVADOR - CARDEAL DA SILVA VIA ENTRE RIOS</option>
+                
+                <option value="260">260 - SALVADOR - RODELAS VIA BR 116</option>
+                
+                <option value="261">261 - SENHOR DO BONFIM - CAMPO FORMOSO</option>
+                
+                <option value="263">263 - SALVADOR - ABARÉ VIA BR116</option>
+                
+                <option value="264">264 - SALVADOR - JUAZEIRO VIA BR116</option>
+                
+                <option value="265">265 - SALVADOR - APORÁ</option>
+                
+                <option value="265A">265A - SALVADOR - ITAMIRA VIA APORÁ</option>
+                
+                <option value="265A2">265A2 - SALVADOR - CRISÓPOLIS VIA ACAJUTIBA</option>
+                
+                <option value="266">266 - SALVADOR - ESPLANADA</option>
+                
+                <option value="267">267 - SALVADOR - CONDE</option>
+                
+                <option value="267A">267A - SALVADOR - SÍTIO DO CONDE VIA CONDE</option>
+                
+                <option value="267R">267R - ESPLANADA - CONDE</option>
+                
+                <option value="268">268 - SALVADOR - RIO REAL</option>
+                
+                <option value="268.EXE">268.EXE - SALVADOR - RIO REAL</option>
+                
+                <option value="269">269 - SALVADOR - JANDAÍRA</option>
+                
+                <option value="270">270 - SALVADOR - SANTO ANTÔNIO DE JESUS VIA BR 101</option>
+                
+                <option value="270.CAR">270.CAR - SALVADOR - SANTO ANTÔNIO DE JESUS VIA BR 101</option>
+                
+                <option value="271">271 - SALVADOR - CABACEIRAS DO PARAGUAÇU VIA GOVERNADOR MANGABEIRA</option>
+                
+                <option value="272">272 - IRECÊ - UTINGA VIA MORRO DO CHAPÉU</option>
+                
+                <option value="273">273 - SALVADOR - CONCEIÇÃO DA FEIRA VIA BR 101</option>
+                
+                <option value="273.CAR">273.CAR - SALVADOR - CONCEIÇÃO DA FEIRA VIA BR 101</option>
+                
+                <option value="274">274 - ITABUNA - BOM DESPACHO VIA BR101</option>
+                
+                <option value="275">275 - SALVADOR - MUCUGÊ</option>
+                
+                <option value="275.EXE">275.EXE - SALVADOR - MUCUGÊ</option>
+                
+                <option value="275A">275A - SALVADOR - IBICOARA</option>
+                
+                <option value="275R">275R - ITABERABA - MUCUGÊ</option>
+                
+                <option value="277">277 - ITAPETINGA - POTIRAGUÁ VIA BA670</option>
+                
+                <option value="278">278 - ITABERABA - NOVA REDENÇÃO VIA BR242</option>
+                
+                <option value="279">279 - JUAZEIRO - MIGUEL CALMON VIA CAPIM GROSSO</option>
+                
+                <option value="280">280 - SALVADOR - MARAGOGIPE</option>
+                
+                <option value="281">281 - SALVADOR - MURITIBA</option>
+                
+                <option value="283">283 - ITABERABA - NOVA REDENÇÃO VIA UBIRAITÁ</option>
+                
+                <option value="284">284 - JACOBINA - LAGOA DO 33</option>
+                
+                <option value="285">285 - FEIRA DE SANTANA - SÃO FÉLIX VIA MAGALHÃES</option>
+                
+                <option value="285.MIC">285.MIC - FEIRA DE SANTANA - SÃO FÉLIX VIA MAGALHÃES</option>
+                
+                <option value="285A">285A - FEIRA DE SANTANA - ENT. NAGÉ VIA MAGALHÃES</option>
+                
+                <option value="286A">286A - JACOBINA - AMARGOSA VIA MILAGRES</option>
+                
+                <option value="287">287 - FEIRA DE SANTANA - SANTO ANTÔNIO DE JESUS VIA BR101</option>
+                
+                <option value="287A">287A - FEIRA DE SANTANA - NAZARÉ VIA SANTO ANTÔNIO DE JESUS / BR101</option>
+                
+                <option value="289">289 - FEIRA DE SANTANA - SANTO ANTÔNIO DE JESUS VIA HUMILDES</option>
+                
+                <option value="290">290 - FEIRA DE SANTANA - CRUZ DAS ALMAS VIA MAGALHÃES</option>
+                
+                <option value="293">293 - FEIRA DE SANTANA - AMARGOSA</option>
+                
+                <option value="293.EXE">293.EXE - FEIRA DE SANTANA - AMARGOSA</option>
+                
+                <option value="295">295 - SALVADOR - ITABERABA VIA ARGOIM</option>
+                
+                <option value="295.EXE">295.EXE - SALVADOR - ITABERABA VIA ARGOIM</option>
+                
+                <option value="295A">295A - SALVADOR - RUY BARBOSA VIA ITABERABA</option>
+                
+                <option value="295A.EXE">295A.EXE - SALVADOR - RUY BARBOSA VIA ITABERABA</option>
+                
+                <option value="295A2">295A2 - SALVADOR - BOA VISTA DO TUPIM VIA ITABERABA</option>
+                
+                <option value="296">296 - SALVADOR - ITABERABA VIA IAÇU</option>
+                
+                <option value="297">297 - SALVADOR - MARAGOGIPE</option>
+                
+                <option value="297.CAR">297.CAR - SALVADOR - MARAGOGIPE</option>
+                
+                <option value="297.EXE">297.EXE - SALVADOR - MARAGOGIPE</option>
+                
+                <option value="298">298 - SALVADOR - MURITIBA</option>
+                
+                <option value="301">301 - SERRINHA - ARACI VIA BARROCAS</option>
+                
+                <option value="304">304 - BOM DESPACHO - SANTO ANTÔNIO DE JESUS</option>
+                
+                <option value="305">305 - SALVADOR - PATAÍBA</option>
+                
+                <option value="305A">305A - SALVADOR - BIRITINGA VIA PATAÍBA</option>
+                
+                <option value="306">306 - SALVADOR - IRARÁ VIA OURICANGAS</option>
+                
+                <option value="308">308 - SALVADOR - JACU VIA TERRA NOVA</option>
+                
+                <option value="308A">308A - SALVADOR - TEODORO SAMPAIO VIA JACU</option>
+                
+                <option value="308E">308E - SALVADOR - TERRA NOVA</option>
+                
+                <option value="309">309 - SALVADOR - IRARÁ VIA CORAÇÃO DE MARIA</option>
+                
+                <option value="309.EXE">309.EXE - SALVADOR - IRARÁ VIA CORAÇÃO DE MARIA</option>
+                
+                <option value="310">310 - JUAZEIRO - SERRINHA VIA BR 116</option>
+                
+                <option value="310R">310R - ITIÚBA - SENHOR DO BONFIM</option>
+                
+                <option value="311">311 - QUEIMADAS - CONCEIÇÃO DO COITÉ</option>
+                
+                <option value="312">312 - QUEIMADAS - VALENTE</option>
+                
+                <option value="314">314 - SALVADOR - QUEIMADAS</option>
+                
+                <option value="314A">314A - SALVADOR - NORDESTINA VIA QUEIMADAS</option>
+                
+                <option value="315">315 - SALVADOR - MONTE SANTO VIA QUEIMADAS</option>
+                
+                <option value="316">316 - SALVADOR - CANSANÇÃO VIA VALENTE</option>
+                
+                <option value="318">318 - QUEIMADAS - CAMPO FORMOSO</option>
+                
+                <option value="318E">318E - QUEIMADAS - SENHOR DO BONFIM</option>
+                
+                <option value="322">322 - FEIRA DE SANTANA - CANUDOS</option>
+                
+                <option value="323">323 - SALVADOR - BRUMADO</option>
+                
+                <option value="323.LEI">323.LEI - SALVADOR - BRUMADO</option>
+                
+                <option value="324">324 - SALVADOR - IRARÁ VIA FEIRA DE SANTANA</option>
+                
+                <option value="325">325 - SALVADOR - ITIÚBA VIA VALENTE</option>
+                
+                <option value="326">326 - SALVADOR - ITIÚBA VIA CAPIM GROSSO</option>
+                
+                <option value="327">327 - SALVADOR - MUTUÍPE</option>
+                
+                <option value="327A3">327A3 - SALVADOR - SANTA INÊS VIA MUTUÍPE</option>
+                
+                <option value="328">328 - SALVADOR - IRECÊ</option>
+                
+                <option value="328.CAR">328.CAR - SALVADOR - IRECÊ</option>
+                
+                <option value="328.ESL">328.ESL - SALVADOR - IRECÊ</option>
+                
+                <option value="329">329 - SALVADOR - XIQUE-XIQUE VIA FEIRA DE SANTANA</option>
+                
+                <option value="329.CAR">329.CAR - SALVADOR - XIQUE-XIQUE VIA FEIRA DE SANTANA</option>
+                
+                <option value="329.ESL">329.ESL - SALVADOR - XIQUE-XIQUE VIA FEIRA DE SANTANA</option>
+                
+                <option value="329.EXE">329.EXE - SALVADOR - XIQUE-XIQUE VIA FEIRA DE SANTANA</option>
+                
+                <option value="329A">329A - SALVADOR - BARRA VIA XIQUE-XIQUE</option>
+                
+                <option value="329A.ESL">329A.ESL - SALVADOR - BARRA VIA XIQUE-XIQUE</option>
+                
+                <option value="330">330 - SALVADOR - RUY BARBOSA VIA MACAJUBA</option>
+                
+                <option value="330.CAR">330.CAR - SALVADOR - RUY BARBOSA VIA MACAJUBA</option>
+                
+                <option value="330.EXE">330.EXE - SALVADOR - RUY BARBOSA VIA MACAJUBA</option>
+                
+                <option value="331">331 - SANTA MARIA DA VITÓRIA - SANTANA</option>
+                
+                <option value="332">332 - FEIRA DE SANTANA - VÁRZEA DO POÇO</option>
+                
+                <option value="333">333 - SALVADOR - ITAMARAJU</option>
+                
+                <option value="336">336 - ITAMARAJU - ITANHÉM VIA MEDEIROS NETO</option>
+                
+                <option value="338">338 - EUNÁPOLIS - ITAMARAJU</option>
+                
+                <option value="338R">338R - MONTE PASCOAL - ITAMARAJU</option>
+                
+                <option value="339">339 - EUNÁPOLIS - SANTA CRUZ  CABRÁLIA</option>
+                
+                <option value="340">340 - EUNÁPOLIS - GUARATINGA VIA ITABELA</option>
+                
+                <option value="340R">340R - EUNÁPOLIS - ITABELA</option>
+                
+                <option value="341">341 - SANTA MARIA DA VITÓRIA - CORRENTINA</option>
+                
+                <option value="342">342 - EUNÁPOLIS - BELMONTE via ITAPEBI</option>
+                
+                <option value="342I">342I - EUNÁPOLIS - BELMONTE  via BA 687</option>
+                
+                <option value="343">343 - EUNÁPOLIS - BURANHÉM VIA GUARATINGA</option>
+                
+                <option value="344">344 - EUNÁPOLIS - BOCA DO CÓRREGO VIA ITAPEBI</option>
+                
+                <option value="345">345 - SANTA MARIA DA VITÓRIA - COCOS</option>
+                
+                <option value="347">347 - XIQUE-XIQUE - IPUPIARA</option>
+                
+                <option value="348">348 - FEIRA DE SANTANA - CAMAÇARI VIA PÓLO PETROQUÍMICO</option>
+                
+                <option value="348A">348A - FEIRA DE SANTANA - DIAS D'ÁVILA VIA PÓLO PETROQUÍMICO</option>
+                
+                <option value="349">349 - BOM JESUS DA LAPA - SANTA MARIA DA VITÓRIA</option>
+                
+                <option value="349E">349E - BOM JESUS DA LAPA - JAVI VIA SANTA MARIA DA VITÓRIA</option>
+                
+                <option value="349R">349R - BOM JESUS DA LAPA - SANTA MARIA DA VITÓRIA</option>
+                
+                <option value="350">350 - SALVADOR - SÃO BENTO DO INHATÁ</option>
+                
+                <option value="351">351 - CARAVELAS -  ITAMARAJU VIA PRADO e ALCOBAÇA</option>
+                
+                <option value="352.CAR">352.CAR - SALVADOR - CASTRO ALVES VIA BR 116</option>
+                
+                <option value="355">355 - VALENÇA - ILHÉUS VIA BR101</option>
+                
+                <option value="357">357 - EUNÁPOLIS - ITAPEBI</option>
+                
+                <option value="357X">357X - PORTO SEGURO - ITAPEBI</option>
+                
+                <option value="358">358 - SALVADOR - CARAVELAS</option>
+                
+                <option value="359">359 - VITÓRIA DA CONQUISTA - CACULÉ</option>
+                
+                <option value="360">360 - ITABUNA - MACARANI</option>
+                
+                <option value="361">361 - BRUMADO - CONTENDAS DO SINCORÁ</option>
+                
+                <option value="362">362 - BRUMADO - URANDI VIA MALHADA DE PEDRAS</option>
+                
+                <option value="363">363 - JEQUIÉ - CRAVOLÂNDIA</option>
+                
+                <option value="363E">363E - JEQUIÉ - SANTA INÊS</option>
+                
+                <option value="364">364 - SALVADOR - BOM JESUS DA LAPA VIA BR 242</option>
+                
+                <option value="364.LEI">364.LEI - SALVADOR - BOM JESUS DA LAPA VIA BR 242</option>
+                
+                <option value="364A">364A - SALVADOR - SANTA MARIA DA VITÓRIA VIA BR 242</option>
+                
+                <option value="364A.LEI">364A.LEI - SALVADOR - SANTA MARIA DA VITÓRIA VIA BR 242</option>
+                
+                <option value="366">366 - UBATÃ - ITACARÉ</option>
+                
+                <option value="367">367 - JACOBINA - CAPIM GROSSO</option>
+                
+                <option value="368">368 - UBATÃ - ITAMARATI</option>
+                
+                <option value="370">370 - ITABUNA - IRECÊ</option>
+                
+                <option value="371">371 - ILHÉUS - BARREIRAS VIA BRUMADO / MACAÚBAS</option>
+                
+                <option value="371.EXE">371.EXE - ILHÉUS - BARREIRAS VIA MACAÚBAS</option>
+                
+                <option value="371A">371A - ITAMARAJU - BARRA VIA ILHÉUS / BARREIRAS / MACAÚBAS</option>
+                
+                <option value="371A2">371A2 - PORTO SEGURO - BARRA VIA ILHÉUS / BARREIRAS / MACAÚBAS</option>
+                
+                <option value="371F">371F - ILHÉUS - BARRA VIA BARREIRAS / MACAÚBAS</option>
+                
+                <option value="371R">371R - MACAÚBAS - BARREIRAS</option>
+                
+                <option value="371R2">371R2 - MACAÚBAS - IBOTIRAMA</option>
+                
+                <option value="373">373 - SANTO ANTÔNIO DE JESUS - ITABERABA VIA IAÇU</option>
+                
+                <option value="374">374 - SALVADOR - AIQUARA VIA ALGODÃO</option>
+                
+                <option value="378">378 - CAETITÉ - BOTUPORÃ VIA TANQUE NOVO</option>
+                
+                <option value="379">379 - EUNÁPOLIS - BARROLÂNDIA</option>
+                
+                <option value="379I">379I - EUNÁPOLIS - BARROLÂNDIA VIA BA 687</option>
+                
+                <option value="380">380 - ITABUNA - IBIRATAIA VIA BR101</option>
+                
+                <option value="382">382 - JEQUIÉ - IPIAÚ</option>
+                
+                <option value="382X">382X - JEQUIÉ - GANDU via IPIAÚ</option>
+                
+                <option value="384">384 - UBATÃ - POÇO CENTRAL</option>
+                
+                <option value="385R">385R - ITUBERÁ - GANDU</option>
+                
+                <option value="386">386 - SANTO ANTÔNIO DE JESUS - BREJÕES VIA AMARGOSA E BR 116</option>
+                
+                <option value="387">387 - ITAPETINGA - CAATIBA</option>
+                
+                <option value="388">388 - BRUMADO - IRAMAIA VIA NOVO ACRE</option>
+                
+                <option value="389">389 - GUANAMBI - MALHADA</option>
+                
+                <option value="390">390 - ITAPETINGA - POTIRAGUÁ</option>
+                
+                <option value="393">393 - GUANAMBI - CARINHANHA</option>
+                
+                <option value="395">395 - JUAZEIRO - CURAÇÁ</option>
+                
+                <option value="396">396 - TEIXEIRA DE FREITAS - PORTO SEGURO</option>
+                
+                <option value="396R2">396R2 - PORTO SEGURO - BARROLÂNDIA</option>
+                
+                <option value="396R3">396R3 - TEIXEIRA DE FREITAS - EUNÁPOLIS</option>
+                
+                <option value="397">397 - FEIRA DE SANTANA - CONCEIÇÃO DO JACUÍPE</option>
+                
+                <option value="397A.MIC">397A.MIC - FEIRA DE SANTANA - CORAÇÃO DE MARIA VIA CONCEIÇÃO DO JACUÍPE</option>
+                
+                <option value="399">399 - SALVADOR - JAGUAQUARA VIA BR 116</option>
+                
+                <option value="401">401 - FEIRA DE SANTANA - VITÓRIA DA CONQUISTA</option>
+                
+                <option value="402">402 - JEQUIÉ - VALENÇA VIA JAGUAQUARA</option>
+                
+                <option value="405">405 - IRECÊ - XIQUE-XIQUE</option>
+                
+                <option value="406">406 - VITÓRIA DA CONQUISTA - CAATIBA</option>
+                
+                <option value="407">407 - IRECÊ - CAFARNAUM</option>
+                
+                <option value="408">408 - VITÓRIA DA CONQUISTA - BARRA DO CHOÇA</option>
+                
+                <option value="409">409 - SALVADOR - MACAÚBAS VIA BR 242</option>
+                
+                <option value="409.EXE">409.EXE - SALVADOR - MACAÚBAS VIA BR242</option>
+                
+                <option value="410">410 - FEIRA DE SANTANA - MAIRI VIA IPIRÁ</option>
+                
+                <option value="411">411 - SALVADOR - IRAMAIA</option>
+                
+                <option value="411.EXE">411.EXE - SALVADOR - IRAMAIA</option>
+                
+                <option value="411R">411R - ITABERABA - MARCIONÍLIO SOUZA</option>
+                
+                <option value="411R2">411R2 - ITABERABA - IRAMAIA</option>
+                
+                <option value="413">413 - JUAZEIRO - CANUDOS VIA ENT PINHÕES/ BR235</option>
+                
+                <option value="415">415 - LARGO DA CALÇADA - PORTO DE SAUÍPE</option>
+                
+                <option value="415.MIC">415.MIC - TERMINAL RODOVIÁRIO (SALVADOR) - PORTO DE SAUÍPE (DIST ENTRE RIOS) VIA BA099</option>
+                
+                <option value="415E.URB">415E.URB - CAMAÇARI (TERMINAL DA FEIRA) - PORTO DE SAUÍPE (DIST ENTRE RIOS) VIA BA099</option>
+                
+                <option value="416">416 - FEIRA DE SANTANA - CAPIM GROSSO</option>
+                
+                <option value="417">417 - ITABUNA - MEDEIROS NETO</option>
+                
+                <option value="418">418 - ITABUNA - ITABELA</option>
+                
+                <option value="419">419 - ITABUNA - TEIXEIRA DE FREITAS</option>
+                
+                <option value="419A2">419A2 - ILHÉUS - TEIXEIRA DE FREITAS VIA ITABUNA</option>
+                
+                <option value="419A2.EXE">419A2.EXE - ILHÉUS X TEIXEIRA DE FREITAS VIA ITABUNA</option>
+                
+                <option value="420">420 - ITABUNA - GUARATINGA</option>
+                
+                <option value="421">421 - SALVADOR - TEIXEIRA DE FREITAS</option>
+                
+                <option value="421.CAR">421.CAR - SALVADOR - TEIXEIRA DE FREITAS</option>
+                
+                <option value="421.DCO">421.DCO - SALVADOR - TEIXEIRA DE FREITAS</option>
+                
+                <option value="421.ESL">421.ESL - SALVADOR - TEIXEIRA DE FREITAS</option>
+                
+                <option value="424">424 - JUAZEIRO - TOMBADOR VIA SENTO SÉ</option>
+                
+                <option value="425">425 - JACOBINA - SENHOR DO BONFIM VIA SAÚDE</option>
+                
+                <option value="426">426 - FEIRA DE SANTANA - CAMAMU</option>
+                
+                <option value="426A2">426A2 - FEIRA DE SANTANA - ITACARÉ VIA CAMAMÚ</option>
+                
+                <option value="426A2.CAR">426A2.CAR - FEIRA DE SANTANA - ITACARÉ VIA CAMAMÚ</option>
+                
+                <option value="426E">426E - FEIRA DE SANTANA - VALENÇA</option>
+                
+                <option value="427">427 - JEQUIÉ - ILHÉUS VIA URUÇUCA</option>
+                
+                <option value="427.EXE">427.EXE - JEQUIÉ - ILHÉUS VIA URUÇUCA</option>
+                
+                <option value="428">428 - VITÓRIA DA CONQUISTA - BRUMADO</option>
+                
+                <option value="431">431 - VITÓRIA DA CONQUISTA - PLANALTO VIA BARRA DO CHOÇA</option>
+                
+                <option value="437">437 - ITAMARAJU - PORTO SEGURO</option>
+                
+                <option value="438">438 - ITABUNA - ITAIMBÉ</option>
+                
+                <option value="439.URB">439.URB - PORTO SEGURO - SANTA CRUZ CABRÁLIA</option>
+                
+                <option value="440">440 - ITAMARAJU - CORUMBAÚ VIA GUARANI</option>
+                
+                <option value="441">441 - EUCLIDES DA CUNHA - SENHOR DO BONFIM</option>
+                
+                <option value="443">443 - JUAZEIRO - SOBRADINHO</option>
+                
+                <option value="444I">444I - VITÓRIA DA CONQUISTA - URANDI VIA ENTRONC BR116 / BA265 / BELO CAMPO</option>
+                
+                <option value="446">446 - FEIRA DE SANTANA - UTINGA VIA WAGNER</option>
+                
+                <option value="450">450 - SÃO FÉLIX - IAÇU</option>
+                
+                <option value="450A">450A - SÃO FÉLIX - ITABERABA VIA IAÇU</option>
+                
+                <option value="452">452 - ITABUNA - SERRA GRANDE</option>
+                
+                <option value="453">453 - ITAPETINGA - CAMACAN VIA PALMIRA</option>
+                
+                <option value="454">454 - SALVADOR - BARRA VIA BR242</option>
+                
+                <option value="454R">454R - IBOTIRAMA - BARRA</option>
+                
+                <option value="456">456 - ILHÉUS - ALMADINA VIA COARACI</option>
+                
+                <option value="457">457 - ITABUNA - PORTO SEGURO</option>
+                
+                <option value="458.UMIC">458.UMIC - JAGUAQUARA - ITIRUÇU</option>
+                
+                <option value="459">459 - SALVADOR - QUIJINGUE VIA BR116</option>
+                
+                <option value="459E">459E - FEIRA DE SANTANA - QUIJINGUE</option>
+                
+                <option value="461">461 - TEIXEIRA DE FREITAS x IBIRAPOÃ via RANCHO ALEGRE</option>
+                
+                <option value="463">463 - EUCLIDES DA CUNHA - CANSANÇÃO</option>
+                
+                <option value="466">466 - BARREIRAS - SÃO JOSÉ</option>
+                
+                <option value="466A">466A - BARREIRAS - BURITIRAMA VIA SÃO JOSÉ</option>
+                
+                <option value="467">467 - VITÓRIA DA CONQUISTA - LAGOA GRANDE VIA BELO CAMPO</option>
+                
+                <option value="467E">467E - VITÓRIA DA CONQUISTA - QUARAÇU</option>
+                
+                <option value="468">468 - ILHÉUS - BANCO CENTRAL VIA URUÇUCA</option>
+                
+                <option value="469">469 - SALVADOR - PILAR</option>
+                
+                <option value="474">474 - FEIRA DE SANTANA - SANTO AMARO VIA BR 324 e OLIVEIRA DOS CAMPINHOS</option>
+                
+                <option value="475">475 - SALVADOR - UTINGA VIA WAGNER</option>
+                
+                <option value="475.EXE">475.EXE - SALVADOR - UTINGA VIA WAGNER</option>
+                
+                <option value="475E">475E - SALVADOR - WAGNER</option>
+                
+                <option value="476">476 - ITABUNA - ALMADINA VIA FLORESTA AZUL</option>
+                
+                <option value="477">477 - VITÓRIA DA CONQUISTA - POTIRAGUÁ</option>
+                
+                <option value="478">478 - FEIRA DE SANTANA - CONDE VIA BR 101</option>
+                
+                <option value="478A">478A - FEIRA DE SANTANA - BARRA DO ITARIRI via CONDE</option>
+                
+                <option value="479">479 - ITABUNA - VILA BRASIL</option>
+                
+                <option value="480">480 - SALVADOR - BARRA DA ESTIVA VIA MARACÁS</option>
+                
+                <option value="480R2">480R2 - SALVADOR - PARAGUAÇU</option>
+                
+                <option value="482">482 - SALVADOR - BREJÕES VIA BR116</option>
+                
+                <option value="483">483 - SALVADOR - DÁRIO MEIRA</option>
+                
+                <option value="484">484 - BARREIRAS - WANDERLEY</option>
+                
+                <option value="485">485 - BARREIRAS - FORMOSA DO RIO PRETO</option>
+                
+                <option value="486">486 - BARREIRAS - CARIPARÉ</option>
+                
+                <option value="486R">486R - BARREIRAS - RIACHÃO DAS NEVES</option>
+                
+                <option value="487">487 - BARREIRAS - BAIANÓPOLIS</option>
+                
+                <option value="487.URB">487.URB - BARREIRAS - BAIANÓPOLIS</option>
+                
+                <option value="488">488 - FEIRA DE SANTANA - GANDU VIA BR101</option>
+                
+                <option value="489">489 - CAMACAN - MACARANI VIA ITAIMBÉ</option>
+                
+                <option value="490">490 - VITÓRIA DA CONQUISTA - MALHADA</option>
+                
+                <option value="491">491 - SALVADOR - CORAÇÃO DE MARIA</option>
+                
+                <option value="492">492 - VITÓRIA DA CONQUISTA - CAETANOS VIA JOSÉ GONÇALVES</option>
+                
+                <option value="492A">492A - VITÓRIA DA CONQUISTA - ABÓBORA VIA CAETANOS</option>
+                
+                <option value="496">496 - ITABUNA - UBATÃ VIA UBAITABA</option>
+                
+                <option value="497">497 - GANDU - APUAREMA</option>
+                
+                <option value="498A">498A - JACOBINA - BAIXA GRANDE VIA MAIRI</option>
+                
+                <option value="499">499 - FEIRA DE SANTANA - IRARÁ VIA BR 116</option>
+                
+                <option value="500">500 - SALVADOR - MARACÁS VIA ITIRUÇU</option>
+                
+                <option value="500A">500A - SALVADOR - CONTENDAS DO SINCORÁ VIA MARACÁS / ITIRUÇU</option>
+                
+                <option value="501">501 - SALVADOR - PILÃO ARCADO</option>
+                
+                <option value="503">503 - SALVADOR - CAFARNAUM</option>
+                
+                <option value="503.CAR">503.CAR - SALVADOR - CAFARNAUM</option>
+                
+                <option value="503A">503A - SALVADOR - SEABRA VIA CAFARNAUM</option>
+                
+                <option value="504">504 - TEIXEIRA DE FREITAS - NOVA VIÇOSA</option>
+                
+                <option value="505">505 - SALVADOR - CALDEIRÃO GRANDE</option>
+                
+                <option value="505A">505A - SALVADOR - PINDOBAÇU VIA CAPIM GROSSO</option>
+                
+                <option value="508">508 - ITABUNA - POTIRAGUÁ</option>
+                
+                <option value="509">509 - GUANAMBI - SEBASTIÃO LARANJEIRAS VIA MUTÃS</option>
+                
+                <option value="510">510 - SALVADOR - MORRO DO CHAPÉU VIA IPIRÁ</option>
+                
+                <option value="511">511 - SALVADOR - VALENÇA VIA BR101</option>
+                
+                <option value="512">512 - JUAZEIRO - UAUÁ VIA PILAR</option>
+                
+                <option value="512A">512A - JUAZEIRO - LAGOA DO PIRES VIA PILAR/ UAUÁ</option>
+                
+                <option value="513I">513I - TEIXEIRA DE FREITAS - CARAVELAS VIA ALCOBAÇA</option>
+                
+                <option value="514">514 - ITAMARAJU - CUMURUXATIBA</option>
+                
+                <option value="516">516 - FEIRA DE SANTANA - RIBEIRA DO POMBAL VIA BIRITINGA</option>
+                
+                <option value="517">517 - SALVADOR - TAPIRAMUTÁ</option>
+                
+                <option value="517.CAR">517.CAR - SALVADOR - TAPIRAMUTÁ</option>
+                
+                <option value="517.EXE">517.EXE - SALVADOR - TAPIRAMUTÁ</option>
+                
+                <option value="518">518 - BOM JESUS DA LAPA - IBOTIRAMA</option>
+                
+                <option value="519">519 - LIVRAMENTO  DE NOSSA SENHORA - ARAPIRANGA VIA RIO DE CONTAS</option>
+                
+                <option value="520.CAR">520.CAR - SALVADOR - CIPÓ</option>
+                
+                <option value="520A2.MEX">520A2.MEX - SALVADOR - RIBEIRA DO AMPARO VIA CIPÓ</option>
+                
+                <option value="521">521 - FEIRA DE SANTANA - CANARANA</option>
+                
+                <option value="521A">521A - FEIRA DE SANTANA - IRECÊ VIA CANARANA</option>
+                
+                <option value="522">522 - BRUMADO - TRANQUEIRAS VIA JOÃO VAZ</option>
+                
+                <option value="523">523 - SANTA MARIA DA VITÓRIA - BREJOLÂNDIA VIA SERRA DOURADA</option>
+                
+                <option value="524">524 - BARREIRAS - SÃO DESIDÉRIO</option>
+                
+                <option value="524.URB">524.URB - BARREIRAS - SÃO DESIDÉRIO</option>
+                
+                <option value="526">526 - ITABUNA - VALENÇA VIA CAMAMU</option>
+                
+                <option value="527">527 - SALVADOR - CANARANA VIA IPIRÁ</option>
+                
+                <option value="528">528 - SALVADOR - PAULO AFONSO VIA FEIRA DE SANTANA / TUCANO</option>
+                
+                <option value="528.CAR">528.CAR - SALVADOR - PAULO AFONSO VIA FEIRA DE SANTANA / TUCANO</option>
+                
+                <option value="528.DCO">528.DCO - SALVADOR - PAULO AFONSO VIA FEIRA DE SANTANA / TUCANO</option>
+                
+                <option value="528.ESL">528.ESL - SALVADOR - PAULO AFONSO VIA FEIRA DE SANTANA / TUCANO</option>
+                
+                <option value="528E.CAR">528E.CAR - FEIRA DE SANTANA - PAULO AFONSO VIA TUCANO</option>
+                
+                <option value="530">530 - BARREIRAS - ANGICAL</option>
+                
+                <option value="530.URB">530.URB - BARREIRAS - ANGICAL</option>
+                
+                <option value="532">532 - BRUMADO - TANHAÇU VIA UMBURANAS</option>
+                
+                <option value="533">533 - SEABRA - IPUPIARA VIA BROTAS DE MACAÚBAS</option>
+                
+                <option value="534">534 - IPUPIARA - IBOTIRAMA</option>
+                
+                <option value="536">536 - ITABUNA - JAGUAQUARA VIA LAJE</option>
+                
+                <option value="536A">536A - ITABUNA - JEQUIÉ VIA JAGUAQUARA</option>
+                
+                <option value="536A2">536A2 - ILHÉUS - JAGUAQUARA VIA ITABUNA</option>
+                
+                <option value="537">537 - SALVADOR - UBATÃ VIA IBIRATAIA</option>
+                
+                <option value="537.CAR">537.CAR - SALVADOR - UBATÃ VIA IBIRATAIA</option>
+                
+                <option value="537.EXP">537.EXP - SALVADOR - UBATÃ VIA IBIRATAIA</option>
+                
+                <option value="537.LEI">537.LEI - SALVADOR - UBATÃ VIA IBIRATAIA</option>
+                
+                <option value="538">538 - GUANAMBI - ESTREITO VIA URANDI</option>
+                
+                <option value="539">539 - TEIXEIRA DE FREITAS - MUCURI VIA ITABATÃ</option>
+                
+                <option value="539A">539A - TEIXEIRA DE FREITAS - NOVA VIÇOSA VIA ITABATÃ / MUCURI</option>
+                
+                <option value="539R2">539R2 - MUCURI - FÁBRICA SUZANO</option>
+                
+                <option value="544">544 - SALVADOR - ITUBERÁ</option>
+                
+                <option value="544A">544A - SALVADOR - CAMAMU VIA ITUBERÁ</option>
+                
+                <option value="545">545 - JACOBINA - IRECÊ</option>
+                
+                <option value="546I">546I - SALVADOR - ENCRUZILHADA VIA INHOBIM</option>
+                
+                <option value="548">548 - SALVADOR - BARRA DO MENDES VIA IRECÊ</option>
+                
+                <option value="548.CAR">548.CAR - SALVADOR - BARRA DO MENDES VIA IRECÊ</option>
+                
+                <option value="548.EXE">548.EXE - SALVADOR - BARRA DO MENDES VIA IRECÊ</option>
+                
+                <option value="550">550 - VITÓRIA DA CONQUISTA - MIRANTE VIA BR 116</option>
+                
+                <option value="550E">550E - POÇÕES - MIRANTE VIA BR-116</option>
+                
+                <option value="551">551 - SALVADOR - CANAVIEIRAS VIA URUÇUCA</option>
+                
+                <option value="551.ESL">551.ESL - SALVADOR - CANAVIEIRAS VIA URUÇUCA</option>
+                
+                <option value="552">552 - BOM DESPACHO - SALINAS DA MARGARIDA</option>
+                
+                <option value="552.EXE">552.EXE - BOM DESPACHO - SALINAS DA MARGARIDA</option>
+                
+                <option value="553">553 - TEIXEIRA DE FREITAS - ITANHÉM</option>
+                
+                <option value="554">554 - EUNÁPOLIS - CAJUÍTA</option>
+                
+                <option value="555">555 - EUNÁPOLIS - CAIUBI</option>
+                
+                <option value="556">556 - VITÓRIA DA CONQUISTA - IBICUÍ VIA POÇÕES</option>
+                
+                <option value="557">557 - SALVADOR - PORTO SEGURO</option>
+                
+                <option value="557.DCO">557.DCO - SALVADOR - PORTO SEGURO</option>
+                
+                <option value="557.ESL">557.ESL - SALVADOR - PORTO SEGURO</option>
+                
+                <option value="557.EXE">557.EXE - SALVADOR - PORTO SEGURO</option>
+                
+                <option value="558">558 - BOM JESUS DA LAPA - COCOS VIA FEIRA DA MATA</option>
+                
+                <option value="559I">559I - EUNÁPOLIS - BELMONTE VIA BA683, BARROLÂNDIA E BA275</option>
+                
+                <option value="559X">559X - GUARATINGA - BELMONTE VIA SANTA CRUZ CABRÁLIA</option>
+                
+                <option value="560">560 - ITABUNA - CANAVIEIRAS VIA ILHÉUS</option>
+                
+                <option value="560E">560E - ILHÉUS - CANAVIEIRAS</option>
+                
+                <option value="561">561 - JACOBINA - TAPIRAMUTÁ VIA MIGUEL CALMON</option>
+                
+                <option value="562">562 - VITÓRIA DA CONQUISTA - MARACÁS VIA ITIRUÇU</option>
+                
+                <option value="562A">562A - VITÓRIA DA CONQUISTA - PLANALTINO VIA MARACÁS / ITIRUÇU</option>
+                
+                <option value="562E">562E - JEQUIÉ - MARACÁS VIA ITIRUÇU</option>
+                
+                <option value="563">563 - BOM DESPACHO - ELÍSIO MEDRADO VIA SÃO MIGUEL DAS MATAS</option>
+                
+                <option value="563A">563A - BOM DESPACHO - CASTRO ALVES VIA SÃO MIGUEL DAS MATAS</option>
+                
+                <option value="563A2">563A2 - BOM DESPACHO - AMARGOSA VIA ELÍSIO MEDRADO</option>
+                
+                <option value="563A2.EXE">563A2.EXE - BOM DESPACHO - AMARGOSA VIA ELÍSIO MEDRADO</option>
+                
+                <option value="565">565 - EUNÁPOLIS - CANAVIEIRAS VIA STA MARIA ETERNA</option>
+                
+                <option value="565X">565X - PORTO SEGURO - CANAVIEIRAS VIA VARGITO</option>
+                
+                <option value="566">566 - GANDU - ILHÉUS VIA ITABUNA</option>
+                
+                <option value="567">567 - ILHÉUS - COLÔNIA DE UNA VIA UNA</option>
+                
+                <option value="568A">568A - EUNÁPOLIS - ITAPETINGA VIA VIA BA270</option>
+                
+                <option value="568X">568X - EUNÁPOLIS - VITÓRIA DA CONQUISTA VIA POTIRAGUÁ</option>
+                
+                <option value="568X2.EXE">568X2.EXE - TEIXEIRA DE FREITAS - VITÓRIA DA CONQUISTA</option>
+                
+                <option value="569">569 - BOM DESPACHO - CRAVOLÂNDIA</option>
+                
+                <option value="569X">569X - BOM DESPACHO - JEQUIÉ VIA VALE DO JIQUIRIÇÁ</option>
+                
+                <option value="571E">571E - ITAMARAJU - JUCURUÇU</option>
+                
+                <option value="572R">572R - SÃO JOSÉ DO PRADO - TEIXEIRA DE FREITAS</option>
+                
+                <option value="574">574 - JACOBINA - MORRO DO CHAPÉU</option>
+                
+                <option value="575">575 - GUANAMBI - PINDAÍ</option>
+                
+                <option value="576">576 - GUANAMBI - PORTO SEGURO VIA POTIRAGUÁ</option>
+                
+                <option value="576.EXE">576.EXE - GUANAMBI - PORTO SEGURO VIA POTIRAGUÁ</option>
+                
+                <option value="577">577 - VITÓRIA DA CONQUISTA - MACARANI VIA ITAMBÉ</option>
+                
+                <option value="578">578 - BOM JESUS DA LAPA - AGROVILAS XVI VIA EIXO I</option>
+                
+                <option value="579">579 - BOM DESPACHO - CAMAMU VIA BA001</option>
+                
+                <option value="579A">579A - BOM DESPACHO - MARAÚ VIA BA001</option>
+                
+                <option value="579A2">579A2 - BOM DESPACHO - ITACARÉ VIA CAMAMU E BA001</option>
+                
+                <option value="579A2.EXE">579A2.EXE - BOM DESPACHO - ITACARÉ VIA CAMAMU E BA001</option>
+                
+                <option value="580">580 - FEIRA DE SANTANA - JACOBINA VIA CAPIM GROSSO</option>
+                
+                <option value="582E">582E - SALVADOR - LIVRAMENTO DE NOSSA SENHORA VIA BRUMADO</option>
+                
+                <option value="582I">582I - SALVADOR - PARAMIRIM VIA MARACÁS E LIVRAMENTO DE NOSSA SENHORA</option>
+                
+                <option value="582I.LEI">582I.LEI - SALVADOR - PARAMIRIM VIA MARACÁS E LIVRAMENTO DE NOSSA SENHORA</option>
+                
+                <option value="582R">582R - BRUMADO  - PARAMIRIM</option>
+                
+                <option value="583">583 - SALVADOR - ITAGI VIA JEQUIÉ</option>
+                
+                <option value="584">584 - BOM JESUS DA LAPA - AGROVILAS XVI VIA EIXO II</option>
+                
+                <option value="587">587 - JACOBINA - SENHOR DO BONFIM VIA CALDEIRÃO GRANDE</option>
+                
+                <option value="588E">588E - FEIRA DE SANTANA - PÉ DE SERRA</option>
+                
+                <option value="590">590 - SEABRA - NOVO HORIZONTE</option>
+                
+                <option value="591">591 - SEABRA - PIATÃ</option>
+                
+                <option value="592">592 - BARREIRAS - XIQUE-XIQUE</option>
+                
+                <option value="592A">592A - XIQUE-XIQUE - VISTA ALEGRE VIA DIVISA-BA/TO</option>
+                
+                <option value="592A2">592A2 - BARREIRAS - MUQUÉM DO SÃO FRANCISCO VIA XIQUE-XIQUE</option>
+                
+                <option value="592A3">592A3 - BARREIRAS - MORPARÁ VIA XIQUE-XIQUE</option>
+                
+                <option value="592A4">592A4 - XIQUE-XIQUE - RODA VELHA VIA BARREIRAS</option>
+                
+                <option value="592A5">592A5 - XIQUE-XIQUE - LUIS EDUARDO MAGALHÃES VIA BARREIRAS</option>
+                
+                <option value="592A6">592A6 - BARREIRAS - BARRA DO RIO GRANDE VIA XIQUE-XIQUE</option>
+                
+                <option value="593">593 - BOM JESUS DA LAPA - GUANAMBI VIA MATINA</option>
+                
+                <option value="593X">593X - GUANAMBI - POSTO DO ROSÁRIO VIA MATINA / SÃO DESIDÉRIO</option>
+                
+                <option value="594">594 - JEQUIÉ - ITAGIBÁ VIA IPIAU</option>
+                
+                <option value="595">595 - SALVADOR - ITAPETINGA VIA BR101</option>
+                
+                <option value="595.DCO">595.DCO - SALVADOR - ITAPETINGA VIA BR101</option>
+                
+                <option value="595.ESL">595.ESL - SALVADOR - ITAPETINGA VIA BR101</option>
+                
+                <option value="596">596 - BOM DESPACHO - VALENÇA VIA BA001</option>
+                
+                <option value="597">597 - XIQUE-XIQUE - GENTIO DO OURO VIA ITAGUAÇU DA BAHIIA</option>
+                
+                <option value="600">600 - ITABUNA - UNA VIA SÃO JOSÉ DA VITÓRIA</option>
+                
+                <option value="601">601 - VITÓRIA DA CONQUISTA - IRAMAIA VIA TANHAÇU</option>
+                
+                <option value="602">602 - EUNÁPOLIS - PORTO SEGURO</option>
+                
+                <option value="602X">602X - PORTO SEGURO - JEQUIÉ VIA BA670</option>
+                
+                <option value="603A">603A - CANAVIEIRAS - POSTO DO ROSÁRIO VIA PARAMIRIM / BARREIRAS</option>
+                
+                <option value="603A2">603A2 - EUNÁPOLIS - POSTO DO ROSÁRIO VIA PARAMIRIM / BARREIRAS</option>
+                
+                <option value="603A3">603A3 - CAMACAN - POSTO DO ROSÁRIO VIA PARAMIRIM / BARREIRAS</option>
+                
+                <option value="603A4">603A4 - CÂNDIDO SALES - POSTO DO ROSÁRIO VIA BARREIRAS / VITÓRIA DA CONQUISTA</option>
+                
+                <option value="603A5">603A5 - OLIVENÇA - POSTO DO ROSÁRIO VIA PARAMIRIM / BARREIRAS</option>
+                
+                <option value="603F">603F - VITÓRIA DA CONQUISTA - POSTO DO ROSÁRIO VIA PARAMIRIM / BARREIRAS</option>
+                
+                <option value="604">604 - ITAMARAJU - TEIXEIRA DE FREITAS VIA PRADO / ALCOBAÇA</option>
+                
+                <option value="604R">604R - TEIXEIRA DE FREITAS - PRADO</option>
+                
+                <option value="606">606 - TEIXEIRA DE FREITAS - ALCOBAÇA</option>
+                
+                <option value="608">608 - IPIAÚ - GANDU VIA ALGODÃO</option>
+                
+                <option value="610">610 - UBAITABA - CAMPINHO VIA MARAÚ</option>
+                
+                <option value="611">611 - ITABUNA - IBIRATAIA VIA BANCO CENTRAL</option>
+                
+                <option value="612">612 - SALVADOR - EUNÁPOLIS</option>
+                
+                <option value="613">613 - FEIRA DE SANTANA - SÁTIRO DIAS VIA SERRINHA</option>
+                
+                <option value="614.URB">614.URB - SANTO ANTONIO DE JESUS - SÃO FELIPE</option>
+                
+                <option value="616">616 - CAMACAN - SANTA LUZIA VIA VARGITO</option>
+                
+                <option value="616.UMIC">616.UMIC - CAMACAN - SANTA LUZIA VIA VARGITO</option>
+                
+                <option value="616.URB">616.URB - CAMACAN - SANTA LUZIA VIA VARGITO</option>
+                
+                <option value="617.URB">617.URB - CAMACAN - MASCOTE VIA PIMENTA</option>
+                
+                <option value="618.URB">618.URB - CAMACAN - JUSSARI VIA ANURI</option>
+                
+                <option value="621">621 - ITABUNA - SERRA GRANDE VIA ILHÉUS</option>
+                
+                <option value="622">622 - ITABUNA - IPIAU VIA COARACI</option>
+                
+                <option value="623">623 - BOM DESPACHO - VITÓRIA DA CONQUISTA VIA JAGUAQUARA</option>
+                
+                <option value="624A">624A - SALVADOR - SÍTIO DO CONDE VIA BA099</option>
+                
+                <option value="624A.EXE">624A.EXE - SALVADOR - SÍTIO DO CONDE VIA BA099</option>
+                
+                <option value="625">625 - SALVADOR - ESPLANADA VIA BA099</option>
+                
+                <option value="625A">625A - SALVADOR - INHAMBUPE VIA BA099</option>
+                
+                <option value="626A">626A - SALVADOR - RIO REAL VIA BA099</option>
+                
+                <option value="626A2">626A2 - SALVADOR - JANDAÍRA VIA BA099</option>
+                
+                <option value="627">627 - SALVADOR - ITABERABA VIA RAFAEL JAMBEIRO</option>
+                
+                <option value="627A">627A - SALVADOR - RUY BARBOSA VIA ITABERABA / RAFAEL JAMBEIRO</option>
+                
+                <option value="627E">627E - SALVADOR - SÃO DESIDÉRIO VIA RAFAEL JAMBEIRO</option>
+                
+                <option value="627X">627X - SALVADOR - POSTO DO ROSÁRIO VIA RAFAEL JAMBEIRO / SÃO DESIDÉRIO</option>
+                
+                <option value="629">629 - SALVADOR - SUBAÚMA VIA BA099</option>
+                
+                <option value="630">630 - CAMACAN - PAU BRASIL</option>
+                
+                <option value="634">634 - MACARANI - RIBEIRÃO DO LARGO VIA VILA DO CAFÉ</option>
+                
+                <option value="637">637 - SERRINHA - ESPLANADA VIA RIO REAL</option>
+                
+                <option value="638">638 - EUNÁPOLIS - TRANCOSO VIA VALE VERDE</option>
+                
+                <option value="638E">638E - EUNÁPOLIS - ARRAIAL D'AJUDA VIA VALE VERDE</option>
+                
+                <option value="640">640 - EUNÁPOLIS - BARRA VELHA VIA MONTE PASCOAL</option>
+                
+                <option value="642">642 - EUNÁPOLIS - CARAÍVA VIA ITABELA / USINA</option>
+                
+                <option value="643">643 - TEIXEIRA DE FREITAS x POSTO DA MATA via HELVÉCIA e JUERANA</option>
+                
+                <option value="644">644 - BOM DESPACHO - JEQUIÉ VIA BA 001 / UBATÃ</option>
+                
+                <option value="645I">645I - BOM DESPACHO - ITABUNA VIA BA001 / ITACARÉ</option>
+                
+                <option value="645I.CAR">645I.CAR - BOM DESPACHO - ITABUNA VIA BA001 / ITACARÉ</option>
+                
+                <option value="645I.EXE">645I.EXE - BOM DESPACHO - ITABUNA VIA BA001 / ITACARÉ</option>
+                
+                <option value="646">646 - BOM DESPACHO - CAIRU VIA BA001</option>
+                
+                <option value="647">647 - BOM DESPACHO - PORTO SEGURO VIA BA001</option>
+                
+                <option value="647.CAR">647.CAR - BOM DESPACHO - PORTO SEGURO VIA BA001</option>
+                
+                <option value="647.EXE">647.EXE - BOM DESPACHO - PORTO SEGURO VIA BA001</option>
+                
+                <option value="648">648 - BARREIRAS - TAGUÁ VIA RIACHÃO DAS NEVES</option>
+                
+                <option value="650">650 - BARREIRAS - SANTA RITA DE CÁSSIA VIA RIACHÃO DAS NEVES</option>
+                
+                <option value="652">652 - IBOTIRAMA - POSTO DO ROSÁRIO VIA SÃO DESIDÉRIO</option>
+                
+                <option value="653">653 - VITÓRIA DA CONQUISTA - MARACÁS VIA BR 116 / BR 330</option>
+                
+                <option value="654">654 - LIVRAMENTO  DE NOSSA SENHORA - MACAÚBAS VIA PARAMIRIM</option>
+                
+                <option value="655">655 - TEIXEIRA DE FREITAS - LAJEDÃO VIA BARCELONA</option>
+                
+                <option value="656">656 - JEREMOABO - EUCLIDES DA CUNHA VIA CANUDOS</option>
+                
+                <option value="657">657 - IBOTIRAMA - POSTO DO ROSÁRIO VIA LUIS EDUARDO MAGALHÃES</option>
+                
+                <option value="657R">657R - BARREIRAS - POSTO ROYAL</option>
+                
+                <option value="657R2">657R2 - CRISTÓPOLIS - LUÍS EDUARDO MAGALHÃES</option>
+                
+                <option value="658">658 - BARREIRAS - BARRA VIA BURITIRAMA / MANSIDÃO</option>
+                
+                <option value="659X">659X - SALVADOR - POSTO DO ROSÁRIO VIA BR 242</option>
+                
+                <option value="660">660 - ITABERABA - IBOTIRAMA VIA SEABRA</option>
+                
+                <option value="669">669 - TEIXEIRA DE FREITAS x PRADO via SÃO FRANCISCO</option>
+                
+                <option value="670F">670F - PORTO SEGURO - POSTO DO ROSÁRIO VIA SÃO DESIDÉRIO</option>
+                
+                <option value="670R">670R - PORTO SEGURO - VITÓRIA DA CONQUISTA VIA POTIRAGUÁ</option>
+                
+                <option value="680">680 - JAPU (ILHÉUS) - ITABUNA VIA BR 415 / SALOBRINHO</option>
+                
+                <option value="683">683 - BARREIRAS - LUÍS EDUARDO MAGALHÃES</option>
+                
+                <option value="704">704 - SALVADOR - ITANAGRA VIA ARAÇÁS</option>
+                
+                <option value="711">711 - ALAGOINHAS - BARRA DO ITARIRI VIA SÍTIO DO CONDE</option>
+                
+                <option value="711R">711R - ALAGOINHAS - ENTRE RIOS</option>
+                
+                <option value="715">715 - RIO REAL - FEIRA DE SANTANA, VIA ACAJUTIBA</option>
+                
+                <option value="715E">715E - FEIRA DE SANTANA - ACAJUTIBA</option>
+                
+                <option value="719">719 - ALAGOINHAS X PORTO SAUÍPE VIA SUBAUMA</option>
+                
+                <option value="720">720 - ALAGOINHAS X CAMAÇARI</option>
+                
+                <option value="721.URB">721.URB - ALAGOINHAS - CATU</option>
+                
+                <option value="722.URB">722.URB - ALAGOINHAS - POJUCA</option>
+                
+                <option value="723">723 - ALAGOINHAS - SERRINHA VIA SÁTIRO DIAS</option>
+                
+                <option value="723A">723A - ALAGOINHAS - CONCEIÇÃO DO COITÉ VIA SÁTIRO DIAS</option>
+                
+                <option value="724">724 - ALAGOINHAS - BAIXIO VIA PALAME</option>
+                
+                <option value="727">727 - ALAGOINHAS - ACAJUTIBA, VIA APORÁ</option>
+                
+                <option value="732">732 - ALAGOINHAS - NOVA SOURE VIA SÁTIRO DIAS</option>
+                
+                <option value="733.URB">733.URB - ALAGOINHAS - INHAMBUPE</option>
+                
+                <option value="736.URB">736.URB - ALAGOINHAS - ARAÇÁS</option>
+                
+                <option value="741">741 - PAULO AFONSO - MACURURÉ VIA BA210 / CHORROCHÓ</option>
+                
+                <option value="745.UMIC">745.UMIC - FEIRA DE SANTANA - LUSTOSA VIA BR324 / BR101</option>
+                
+                <option value="746">746 - HIDROLÂNDIA - IRECÊ VIA UIBAÍ, PRESIDENTE DUTRA</option>
+                
+                <option value="749">749 - TEIXEIRA DE FREITAS x NOVA ESPERANÇA via DUQUE DE CAXIAS</option>
+                
+                <option value="751">751 - TEIXEIRA DE FREITAS x CARAVELAS via JUERANA</option>
+                
+                <option value="752">752 - TEIXEIRA DE FREITAS x MASSARANDUBA (município de Vereda) via NOVA LÍDICE</option>
+                
+                <option value="753">753 - TEIXEIRA DE FREITAS - JUERANA VIA ALSIBIDIO</option>
+                
+                <option value="756">756 - GUANAMBI - BOM JESUS DA LAPA via CAETITÉ / IGAPORÃ</option>
+                
+                <option value="758.URB">758.URB - ALAGOINHAS -  ITANAGRA VIA BA504</option>
+                
+                <option value="760">760 - TEIXEIRA DE FREITAS x ACAMPAMENTO 45 (POV ALCOBAÇA)</option>
+                
+                <option value="760I">760I - TEIXEIRA DE FREITAS - ACAMPAMENTO 45 VIA BA 022</option>
+                
+                <option value="761">761 - ALAGOINHAS - MADRE DE DEUS VIA SÃO SEBASTIÃO DO PASSÉ</option>
+                
+                <option value="762">762 - ALAGOINHAS x BIRITINGA via PATAÍBA</option>
+                
+                <option value="763">763 - ALAGOINHAS x LAMARÃO</option>
+                
+                <option value="780.URB">780.URB - IRECEZINHO (POV LAPÃO) - IRECÊ VIA LAPÃO</option>
+                
+                <option value="781.URB">781.URB - VOLTA GRANDE (POV LAPÃO) - IRECÊ VIA POV MOSQUITO</option>
+                
+                <option value="782.URB">782.URB - LAJEDO DOS PIMENTAS (POV LAPÃO) - IRECÊ VIA LAPÃO</option>
+                
+                <option value="783.URB">783.URB - LAJEDINHO (POV LAPÃO) - IRECÊ VIA LAPÃO</option>
+                
+                <option value="784.URB">784.URB - BOA ESPERANÇA (POV LAPÃO) - IRECÊ VIA LAPÃO</option>
+                
+                <option value="785.URB">785.URB - CALDEIRÃO (POV IBITITÁ) - IRECÊ VIA LAPÃO</option>
+                
+                <option value="786.URB">786.URB - MORRO GRANDE (POV LAPÃO) - IRECÊ VIA FLORESTA</option>
+                
+                <option value="787.URB">787.URB - BOM PRAZER (POV LAPÃO) - IRECÊ VIA LAPÃO</option>
+                
+                <option value="788.URB">788.URB - AGUADA NOVA (POV LAPÃO) - IRECÊ VIA LAPÃO</option>
+                
+                <option value="800">800 - SALVADOR - CAMAÇARI VIA BR 324</option>
+                
+                <option value="800.CAR">800.CAR - SALVADOR - CAMAÇARI VIA BR 324</option>
+                
+                <option value="800.EXE">800.EXE - SALVADOR - CAMAÇARI VIA BR 324</option>
+                
+                <option value="800A2">800A2 - SALVADOR - PÓLO PETROQUÍMICO VIA BR.324</option>
+                
+                <option value="803">803 - SALVADOR - DIAS D'ÁVILA VIA BR 324</option>
+                
+                <option value="803A">803A - SALVADOR - NOVA DIAS D'ÁVILA VIA DIAS D'ÁVILA</option>
+                
+                <option value="803A.CAR">803A.CAR - SALVADOR - NOVA DIAS D'ÁVILA VIA DIAS D'ÁVILA</option>
+                
+                <option value="803A2.URB">803A2.URB - NOVA DIAS D'ÁVILA - TERMINAL RETIRO</option>
+                
+                <option value="804">804 - SALVADOR - CANDEIAS VIA COVA DO DEFUNTO</option>
+                
+                <option value="804.CAR">804.CAR - SALVADOR - CANDEIAS VIA COVA DO DEFUNTO</option>
+                
+                <option value="804.EXE">804.EXE - SALVADOR - CANDEIAS VIA COVA DO DEFUNTO</option>
+                
+                <option value="804A">804A - SALVADOR - MADRE DE DEUS VIA BR-324 E CANDEIAS</option>
+                
+                <option value="807.URB">807.URB - MONTE GORDO - TERMINAL AEROPORTO</option>
+                
+                <option value="808I.URB">808I.URB - CAMAÇARI - TERMINAL MUSSURUNGA VIA PARAFUSO</option>
+                
+                <option value="809.URB">809.URB - CANDEIAS - TERMINAL RETIRO</option>
+                
+                <option value="811.URB">811.URB - CANDEIAS - SÃO FRANCISCO DO CONDE</option>
+                
+                <option value="812.URB">812.URB - CAMAÇARI - SIMÕES FILHO VIA BA093</option>
+                
+                <option value="813.URB">813.URB - CANDEIAS - SIMÕES FILHO VIA BR324</option>
+                
+                <option value="814A.URB">814A.URB - CAMAÇARI - TERMINAL RETIRO VIA PARAFUSO</option>
+                
+                <option value="815.URB">815.URB - SIMÕES FILHO - TERMINAL DA FRANÇA VIA SUBURBANA</option>
+                
+                <option value="815I.URB">815I.URB - SIMÕES FILHO - TERMINAL DA FRANÇA VIA JARDIM CAMPO VERDE/ SUBURBANA</option>
+                
+                <option value="819I.URB">819I.URB - SIMÕES FILHO - ITAIGARA VIA ORLA MARÍTIMA</option>
+                
+                <option value="819I2.URB">819I2.URB - SIMÕES FILHO - TERMINAL MUSSURUNGA</option>
+                
+                <option value="819I2E.URB">819I2E.URB - SIMÕES FILHO - HOSPITAL METROPOLITANO</option>
+                
+                <option value="822.URB">822.URB - MAPELE/ILHA DE SÃO JOÃO - TERMINAL DA FRANÇA VIA AV SUBURBANA</option>
+                
+                <option value="824.URB">824.URB - PORTÃO - TERMINAL RETIRO</option>
+                
+                <option value="826A.URB">826A.URB - GÓES CALMON - TERMINAL RETIRO</option>
+                
+                <option value="836.URB">836.URB - CAMAÇARI - SÃO FRANCISCO DO CONDE VIA BA093</option>
+                
+                <option value="836A2.URB">836A2.URB - CAMAÇARI - SANTO AMARO VIA SÃO FRANCISCO DO CONDE</option>
+                
+                <option value="840.URB">840.URB - VILAS DO ATLÂNTICO - TERMINAL AEROPORTO</option>
+                
+                <option value="840A.URB">840A.URB - LOTEAMENTO MIRAGEM - TERMINAL AEROPORTO</option>
+                
+                <option value="840I.URB">840I.URB - TERMINAL AEROPORTO – VILAS DO ATLÂNTICO VIA SOLAR DE VILAS</option>
+                
+                <option value="841.URB">841.URB - VILAS DO ATLÂNTICO - CAMPO GRANDE VIA ORLA MARÍTIMA</option>
+                
+                <option value="841A.URB">841A.URB - LOTEAMENTO MIRAGEM - CAMPO GRANDE VIA ORLA MARÍTIMA</option>
+                
+                <option value="842.URB">842.URB - VILAS DO ATLÂNTICO - PRAÇA DA SÉ VIA ORLA MARÍTIMA</option>
+                
+                <option value="842A.URB">842A.URB - LOTEAMENTO MIRAGEM - PRAÇA DA SÉ VIA ORLA MARÍTIMA</option>
+                
+                <option value="844.URB">844.URB - CAMAÇARI - NOVA DIAS D'ÁVILA VIA BA093</option>
+                
+                <option value="845A.URB">845A.URB - CAMAÇARI - BONFIM DE MATA VIA DIAS D'ÁVILA</option>
+                
+                <option value="845A2.URB">845A2.URB - CAMAÇARI - MATA DE SÃO JOÃO VIA DIAS D'ÁVILA</option>
+                
+                <option value="845I.URB">845I.URB - CAMAÇARI - NOVA DIAS D'ÁVILA VIA PÓLO PETROQUÍMICO/FORD</option>
+                
+                <option value="846.URB">846.URB - LAURO DE FREITAS - VALE DOS BARRIS VIA AV CENTENÁRIO</option>
+                
+                <option value="846A.URB">846A.URB - PRAIA DE IPITANGA - VALE DOS BARRIS VIA AV AMARÍLIO TIAGO DOS SANTOS</option>
+                
+                <option value="846A2.URB">846A2.URB - PRAIA DE IPITANGA - VALE DOS BARRIS VIA PRAÇA DA ARCANJA</option>
+                
+                <option value="847.URB">847.URB - BARRA DO POJUCA - TERMINAL AEROPORTO VIA MONTE GORDO</option>
+                
+                <option value="854.URB">854.URB - PORTÃO - TERMINAL AEROPORTO</option>
+                
+                <option value="855.URB">855.URB - JAMBEIRO - TERMINAL AEROPORTO</option>
+                
+                <option value="855I.URB">855I.URB - AREIA BRANCA - TERMINAL AEROPORTO</option>
+                
+                <option value="857A.URB">857A.URB - LOTEAMENTO CANTO DOS PÁSSAROS - TERMINAL AEROPORTO VIA BA099</option>
+                
+                <option value="857I.URB">857I.URB - AREMBEPE - TERMINAL AEROPORTO VIA BA099</option>
+                
+                <option value="858A.URB">858A.URB - PRAIA DE IPITANGA - TERMINAL AEROPORTO VIA AV AMARÍLIO TIAGO DOS SANTOS</option>
+                
+                <option value="858A2.URB">858A2.URB - PRAIA DE IPITANGA - TERMINAL AEROPORTO VIA PRAÇA ARCANJA</option>
+                
+                <option value="860I.URB">860I.URB - PORTÃO - TERMINAL PITUAÇU VIA AV PROF PINTO DE AGUIAR</option>
+                
+                <option value="861.URB">861.URB - MATA DE SÃO JOÃO - TERMINAL RETIRO</option>
+                
+                <option value="869I.URB">869I.URB - SIMÕES FILHO - TERMINAL RETIRO</option>
+                
+                <option value="872.URB">872.URB - MAPELE/ ILHA DE SÃO JOÃO - TERMINAL PIRAJÁ VIA SUBURBANA E LIGAÇÃO LOBATO-PIRAJÁ</option>
+                
+                <option value="876.URB">876.URB - SIMÕES FILHO - AREIA BRANCA VIA CEASA</option>
+                
+                <option value="878.URB">878.URB - CAMAÇARI - SIMÕES FILHO VIA RADIAL LESTE</option>
+                
+                <option value="879.URB">879.URB - LAURO DE FREITAS - TERMINAL RODOVIÁRIA VIA STIEP</option>
+                
+                <option value="883.URB">883.URB - VIDA NOVA - TERMINAL AEROPORTO</option>
+                
+                <option value="883A.URB">883A.URB - VIDA NOVA - TERMINAL AEROPORTO VIA BAIRRO PORTÃO</option>
+                
+                <option value="883A3.URB">883A3.URB - VIDA NOVA - TERMINAL AEROPORTO VIA PARQUE SÃO PAULO</option>
+                
+                <option value="883E.URB">883E.URB - TERMINAL AEROPORTO - CONJUNTOS LINDU / BRISAS VIA BA099</option>
+                
+                <option value="883E2.URB">883E2.URB - TERMINAL AEROPORTO - CONJUNTOS LINDU / BRISAS VIA CAIC</option>
+                
+                <option value="884.URB">884.URB - VILA DE ABRANTES - LAPA VIA ITAPUÃ</option>
+                
+                <option value="885.URB">885.URB - VILA DE ABRANTES - TERMINAL AEROPORTO</option>
+                
+                <option value="885A.URB">885A.URB - TERMINAL AEROPORTO - JAUÁ</option>
+                
+                <option value="885E.URB">885E.URB - TERMINAL AEROPORTO - OUTLET PREMIUM VIA BA099</option>
+                
+                <option value="885E2.URB">885E2.URB - TERMINAL AEROPORTO - RESIDENCIAL RECANTO DE ABRANTES VIA RESIDENCIAL COSTA DE ABRANTES</option>
+                
+                <option value="885I.URB">885I.URB - VILA DE ABRANTES - TERMINAL DA FRANÇA VIA SÃO JOAQUIM</option>
+                
+                <option value="886.URB">886.URB - JAUÁ - ITAPUÃ</option>
+                
+                <option value="889.UAR">889.UAR - NOVA DIAS D'ÁVILA - ITAPUÃ VIA BA099/ AEROPORTO</option>
+                
+                <option value="889.URB">889.URB - NOVA DIAS D'ÁVILA - ITAPUÃ VIA BA099/ AEROPORTO</option>
+                
+                <option value="889A.URB">889A.URB - DIAS D'ÁVILA (ENTRADA) - ITAPUÃ VIA BA099/ AEROPORTO</option>
+                
+                <option value="889A2.URB">889A2.URB - MATA DE SÃO JOÃO - ITAPUÃ VIA DIAS D'ÁVILA</option>
+                
+                <option value="889E.URB">889E.URB - CAMAÇARI - ITAPUÃ VIA BA099/ AEROPORTO</option>
+                
+                <option value="890.URB">890.URB - VIDA NOVA - PRAIA DO FLAMENGO VIA ITINGA/ ITAPUÃ</option>
+                
+                <option value="890A.URB">890A.URB - PARQUE SÃO PAULO - PRAIA DO FLAMENGO VIA ITAPUÃ</option>
+                
+                <option value="891.URB">891.URB - LAURO DE FREITAS - ITAPUÃ VIA ITINGA</option>
+                
+                <option value="892A.URB">892A.URB - VILA DE ABRANTES - ITAPUÃ VIA BA099/ PORTÃO</option>
+                
+                <option value="892I.URB">892I.URB - PORTÃO - ITAPUÃ VIA ESTRADA DO CÔCO</option>
+                
+                <option value="898.URB">898.URB - NOVA DIAS D'ÁVILA - MATA DE SÃO JOÃO VIA BONFIM DE MATA</option>
+                
+                <option value="898E.URB">898E.URB - DIAS D'ÁVILA - MATA DE SÃO JOÃO VIA BONFIM DE MATA</option>
+                
+                <option value="913.URB">913.URB - ILHA DE SÃO JOÃO - TERMINAL PITUAÇU VIA AV SUBURBANA E AV GAL COSTA</option>
+                
+                <option value="922.URB">922.URB - LAURO DE FREITAS - TERMINAL PITUAÇU VIA AV ORLANDO GOMES E AV PARALELA</option>
+                
+                <option value="937.URB">937.URB - BURAQUINHO - TEMINAL AEROPORTO</option>
+                
+              </select>
+              <input type="hidden" name="loop" value="1">
+              </font></b></td>
+            </tr>
+            <tr> 
+              <td colspan="3"><b><font size="2" face="Arial, Helvetica, sans-serif"> 
+                </font></b> 
+                <div align="center"><b><font size="2" face="Arial, Helvetica, sans-serif"> 
+                  </font></b></div>
+                <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><font size="2" face="Arial, Helvetica, sans-serif"> 
+                  <input type="submit" value="Consultar" name="submit">
+                  </font></b> </font></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </blockquote>
+      
+
+
+
+
+
+   <div align="center"><font size="1" face="Verdana"><font color="#0033FF">
+	  <a href="http://www.agerba2.ba.gov.br/transporte/index.asp">Início</a> | <a href="javascript:history.back();">Voltar</a> | <a href="http://www.agerba2.ba.gov.br/transporte/index.asp">Encerrar</a>
+      </font></font></div>		
+	
+	   
+      <p align="center"><font size="2"><img src="inicial_arquivos/Governo.gif" width="60" height="38"></font> 
+        <font size="1" face="Verdana" color="#0033FF"><em><br>
+        Agência Estadual de Regulação de Serviços Públicos de Energia, <br>Transportes e Comunicações da Bahia </em> </font> 
+      
+  
+
+
+</p></b></font></form></body></html>
