@@ -23,11 +23,11 @@ for opt in soup.find_all('option'):
 browser = webdriver.Chrome()
 browser.get('http://www.agerba2.ba.gov.br/transporte/localidade_linha.asp')
 element = browser.find_element(By.NAME, "sel_linha")
-option = element.find_element(By.TAG_NAME, "option")
+options = element.find_elements(By.TAG_NAME, "option")
 
 #select = Select(driver.find_element_by_id('fruits01'))
 #seleciona a linha pressiona tab e depois enter
-option.select_by_value(seeds[0]._id).send_keys(Keys.TAB + Keys.RETURN)
+options.select_by_value(seeds[0]._id).send_keys(Keys.TAB + Keys.RETURN)
 
 
 browser.find_element_by_name('submit').click()
