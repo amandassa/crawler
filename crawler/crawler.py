@@ -31,6 +31,15 @@ print(options[0])
 options[4].click()
 botao = browser.find_elements(by=By.TAG_NAME, value ="input")
 botao[1].click()
+tds = browser.find_elements(by=By.TAG_NAME, value ="td")
+i = 0
+for i in tds:
+    if i.get_attribute("width") == '78%':
+        print(i.find_element(by=By.TAG_NAME, value ="font").text)
+#font = tds[1].find_element(by=By.TAG_NAME, value ="font")
+#print(font.text)
+
+
 #select = Select(driver.find_element_by_id('fruits01'))
 #seleciona a linha pressiona tab e depois enter
 #options.select_by_value('005')
