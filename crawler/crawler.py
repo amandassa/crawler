@@ -5,6 +5,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 import urllib.request
 from bs4 import BeautifulSoup
+import random
+import time
+from time import sleep
 seeds = []
 '''
 with open('index.html', encoding='utf-8') as fp:
@@ -22,7 +25,11 @@ for opt in soup.find_all('option'):
   # print(linha)
 
   #print("value: ", img.attrs.get("value")+'- '+ img.string +'\n')
+
 '''
+def sleep():
+  time.sleep(random.uniform(0.1, 2))
+
 linhas = []
 browser = webdriver.Chrome()
 browser.get('http://www.agerba2.ba.gov.br/transporte/localidade_linha.asp')
@@ -33,17 +40,43 @@ for i in range(0,5):
     horario = dict(dia = '', horarios = [])
     linha = dict(codigo = '', nome = '', paradas = [], horariosDestino = [], horariosOrigem = [], )    
     options[i].click()
-    linha.codigo = options[i].get_attribute("value")
-    linha.nome = options[i].text
+    sleep()
+    linha["codigo"] = options[i].get_attribute("value")
+    linha['nome'] = options[i].text
     botoes = browser.find_elements(by=By.TAG_NAME, value ="input")
     for btn in botoes:
         if btn.get_attribute("value") == "Consultar":
             btn.click()
+            sleep()
 
     tds = browser.find_elements(by=By.TAG_NAME, value ="td")
-    for i in tds:
-        if i.get_attribute("width") == '78%':
-            print(i.find_element(by=By.TAG_NAME, value ="font").text)
+    for j in tds:
+        #if j.get_attribute("width") == '15%':                       
+         #   parada['id'] = j.find_element(by=By.TAG_NAME, value ="font").text
+        if j.get_attribute("width") == '78%':
+            #print(j.find_element(by=By.TAG_NAME, value ="font").text)
+            #parada['nome'] = j.find_element(by=By.TAG_NAME, value ="font").text
+            linha['paradas'].append(j.find_element(by=By.TAG_NAME, value ="font").text)
+    
+    links = browser.find_elements(by=By.TAG_NAME, value="a")
+    for l in links:
+        if l.find_element(by=By.TAG_NAME, value="font").text == 'Horários e Frequência':
+            l.click()
+            break
+    
+
+      
+       
+        
+        #print(linha['paradas'])
+        #parada['id'] = ''
+        #parada['nome'] = ''
+
+    print(linha['codigo']+'\n')
+    print(linha['nome']+'\n')
+    for k in linha['paradas']:
+        print(k+'\n')
+    break
 #font = tds[1].find_element(by=By.TAG_NAME, value ="font")
 #print(font.text)
 
