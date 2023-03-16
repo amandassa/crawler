@@ -8,6 +8,9 @@ from bs4 import BeautifulSoup
 import random
 import time
 from time import sleep
+
+import json
+
 seeds = []
 '''
 with open('index.html', encoding='utf-8') as fp:
@@ -29,6 +32,8 @@ for opt in soup.find_all('option'):
 '''
 def sleep():
   time.sleep(random.uniform(0.1, 2))
+
+arquivo = open("linhas.json", 'w')
 
 linhas = []
 browser = webdriver.Chrome()
@@ -71,12 +76,28 @@ for i in range(0,5):
         #print(linha['paradas'])
         #parada['id'] = ''
         #parada['nome'] = ''
-
     print(linha['codigo']+'\n')
     print(linha['nome']+'\n')
     for k in linha['paradas']:
         print(k+'\n')
-    break
+        
+    linhas.append(linha)
+
+    voltar1 = browser.find_elements(by=By.TAG_NAME, value ="a")
+    for n in voltar1:
+        if n.text == 'Voltar':
+            n.click()
+            break
+    sleep()
+    voltar2 = browser.find_elements(by=By.TAG_NAME, value ="a")
+    for s in voltar2:
+        if s.text == 'Voltar':
+            s.click()
+            break
+
+jstring = json.dumps(linhas,ensure_ascii=False).encode()
+arquivo.write(str(jstring.decode()))
+
 #font = tds[1].find_element(by=By.TAG_NAME, value ="font")
 #print(font.text)
 
