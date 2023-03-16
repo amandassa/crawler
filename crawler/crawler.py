@@ -23,19 +23,27 @@ for opt in soup.find_all('option'):
 
   #print("value: ", img.attrs.get("value")+'- '+ img.string +'\n')
 '''
+linhas = []
 browser = webdriver.Chrome()
 browser.get('http://www.agerba2.ba.gov.br/transporte/localidade_linha.asp')
 #element = browser.find_element(By.NAME, "sel_linha")
 options = browser.find_elements(by=By.TAG_NAME, value ="option")
-print(options[0])
-options[4].click()
-botao = browser.find_elements(by=By.TAG_NAME, value ="input")
-botao[1].click()
-tds = browser.find_elements(by=By.TAG_NAME, value ="td")
-i = 0
-for i in tds:
-    if i.get_attribute("width") == '78%':
-        print(i.find_element(by=By.TAG_NAME, value ="font").text)
+for i in range(0,5):
+    parada = dict(id = '', nome = '')
+    horario = dict(dia = '', horarios = [])
+    linha = dict(codigo = '', nome = '', paradas = [], horariosDestino = [], horariosOrigem = [], )    
+    options[i].click()
+    linha.codigo = options[i].get_attribute("value")
+    linha.nome = options[i].text
+    botoes = browser.find_elements(by=By.TAG_NAME, value ="input")
+    for btn in botoes:
+        if btn.get_attribute("value") == "Consultar":
+            btn.click()
+
+    tds = browser.find_elements(by=By.TAG_NAME, value ="td")
+    for i in tds:
+        if i.get_attribute("width") == '78%':
+            print(i.find_element(by=By.TAG_NAME, value ="font").text)
 #font = tds[1].find_element(by=By.TAG_NAME, value ="font")
 #print(font.text)
 
