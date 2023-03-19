@@ -1,10 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.service import Service
-import urllib.request
-from bs4 import BeautifulSoup
 import random
 import time
 from time import sleep
@@ -12,24 +7,7 @@ from time import sleep
 import json
 
 seeds = []
-'''
-with open('index.html', encoding='utf-8') as fp:
-  soup = BeautifulSoup(fp)
 
-#print("Título:", soup.title.string)
-for opt in soup.find_all('option'):
-  _id = 'id'
-  nome = 'nome'
-  linha = {
-    _id: opt.attrs.get("value"),
-    nome: opt.string
-  }
-  seeds.append(linha)
-  # print(linha)
-
-  #print("value: ", img.attrs.get("value")+'- '+ img.string +'\n')
-
-'''
 def sleep():
   time.sleep(random.uniform(0.1, 2))
 
@@ -38,12 +16,11 @@ arquivo = open("linhas.json", 'w')
 linhas = []
 browser = webdriver.Chrome()
 browser.get('http://www.agerba2.ba.gov.br/transporte/localidade_linha.asp')
-#element = browser.find_element(By.NAME, "sel_linha")
 options = browser.find_elements(by=By.TAG_NAME, value ="option")
 for i in range(0,5):
     parada = dict(id = '', nome = '')
     horario = dict(dia = '', horarios = [])
-    linha = dict(codigo = '', nome = '', paradas = [], horariosDestino = [], horariosOrigem = [], )    
+    linha = dict(codigo = '', nome = '', paradas = [], horariosDestino = [], horariosOrigem = [])    
     options[i].click()
     sleep()
     linha["codigo"] = options[i].get_attribute("value")
@@ -56,26 +33,40 @@ for i in range(0,5):
 
     tds = browser.find_elements(by=By.TAG_NAME, value ="td")
     for j in tds:
-        #if j.get_attribute("width") == '15%':                       
-         #   parada['id'] = j.find_element(by=By.TAG_NAME, value ="font").text
-        if j.get_attribute("width") == '78%':
-            #print(j.find_element(by=By.TAG_NAME, value ="font").text)
-            #parada['nome'] = j.find_element(by=By.TAG_NAME, value ="font").text
+        if j.get_attribute("width") == '78%' and (j.find_element(By.TAG_NAME, value="font").text != "LOCALIDADES"):
             linha['paradas'].append(j.find_element(by=By.TAG_NAME, value ="font").text)
     
     links = browser.find_elements(by=By.TAG_NAME, value="a")
     for l in links:
         if l.find_element(by=By.TAG_NAME, value="font").text == 'Horários e Frequência':
             l.click()
+            sleep()
             break
     
+    tdscinza = browser.find_elements(By.CSS_SELECTOR, 'td.cinza02')
+    tdsdias = []
+    for td in tdscinza:
+      if len(td.text) == 3: 
+        tdsdias.append(td)
 
-      
-       
-        
-        #print(linha['paradas'])
-        #parada['id'] = ''
-        #parada['nome'] = ''
+    tdshorarios = []
+    for td in browser.find_elements(by=By.TAG_NAME, value ="td"):
+        if td.get_attribute("width") == "7%":
+            tdshorarios.append(td)
+    
+    for dia in tdsdias:
+        tdshorarios.remove(dia)
+
+    c=0
+    for horario in tdshorarios:
+        if c < 7:
+          linha["horariosOrigem"].append(horario.text)
+          c += 1
+        else:
+            linha["horariosDestino"].append(horario.text)
+
+    ######## LISTA DE HORARIOS: [seg,ter,qua,qui,sex,sab,dom]
+
     print(linha['codigo']+'\n')
     print(linha['nome']+'\n')
     for k in linha['paradas']:
@@ -97,13 +88,3 @@ for i in range(0,5):
 
 jstring = json.dumps(linhas,ensure_ascii=False).encode()
 arquivo.write(str(jstring.decode()))
-
-#font = tds[1].find_element(by=By.TAG_NAME, value ="font")
-#print(font.text)
-
-
-#select = Select(driver.find_element_by_id('fruits01'))
-#seleciona a linha pressiona tab e depois enter
-#options.select_by_value('005')
-
-#browser.find_element_by_name('submit').click()
