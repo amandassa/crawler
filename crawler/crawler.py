@@ -11,13 +11,13 @@ seeds = []
 def sleep():
   time.sleep(random.uniform(0.1, 2))
 
-arquivo = open("linhas.json", 'w')
+arquivo = open("linhas.json",'w')
 
 linhas = []
 browser = webdriver.Chrome()
 browser.get('http://www.agerba2.ba.gov.br/transporte/localidade_linha.asp')
 options = browser.find_elements(by=By.TAG_NAME, value ="option")
-for i in range(0,5):
+for i in range(len(options)):
     parada = dict(id = '', nome = '')
     horario = dict(dia = '', horarios = [])
     linha = dict(codigo = '', nome = '', paradas = [], horariosDestino = [], horariosOrigem = [])    
